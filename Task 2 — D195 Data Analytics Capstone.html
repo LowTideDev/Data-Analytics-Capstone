@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://ashejim.github.io/D195/task2.html -->
+<html lang="en" data-content_root="./" data-mode="auto" data-theme="dark" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .utterances {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .utterances-frame {
+      color-scheme: light;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 1px;
+      min-width: 100%;
+      max-width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Task 2 — D195 Data Analytics Capstone</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <style type="text/css">:host,:root{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Solid";--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Regular";--fa-font-light:normal 300 1em/1 "Font Awesome 6 Light";--fa-font-thin:normal 100 1em/1 "Font Awesome 6 Thin";--fa-font-duotone:normal 900 1em/1 "Font Awesome 6 Duotone";--fa-font-sharp-solid:normal 900 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-regular:normal 400 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-light:normal 300 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-thin:normal 100 1em/1 "Font Awesome 6 Sharp";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}svg:not(:host).svg-inline--fa,svg:not(:root).svg-inline--fa{overflow:visible;box-sizing:content-box}.svg-inline--fa{display:var(--fa-display,inline-block);height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-2xs{vertical-align:.1em}.svg-inline--fa.fa-xs{vertical-align:0}.svg-inline--fa.fa-sm{vertical-align:-.0714285705em}.svg-inline--fa.fa-lg{vertical-align:-.2em}.svg-inline--fa.fa-xl{vertical-align:-.25em}.svg-inline--fa.fa-2xl{vertical-align:-.3125em}.svg-inline--fa.fa-pull-left{margin-right:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-pull-right{margin-left:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-li{width:var(--fa-li-width,2em);top:.25em}.svg-inline--fa.fa-fw{width:var(--fa-fw-width,1.25em)}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:var(--fa-counter-background-color,#ff253a);border-radius:var(--fa-counter-border-radius,1em);box-sizing:border-box;color:var(--fa-inverse,#fff);line-height:var(--fa-counter-line-height,1);max-width:var(--fa-counter-max-width,5em);min-width:var(--fa-counter-min-width,1.5em);overflow:hidden;padding:var(--fa-counter-padding,.25em .5em);right:var(--fa-right,0);text-overflow:ellipsis;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-counter-scale,.25));transform:scale(var(--fa-counter-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:var(--fa-bottom,0);right:var(--fa-right,0);top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:var(--fa-bottom,0);left:var(--fa-left,0);right:auto;top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{top:var(--fa-top,0);right:var(--fa-right,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:var(--fa-left,0);right:auto;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top left;transform-origin:top left}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.fa-xs{font-size:.75em;line-height:.0833333337em;vertical-align:.125em}.fa-sm{font-size:.875em;line-height:.0714285718em;vertical-align:.0535714295em}.fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.fa-xl{font-size:1.5em;line-height:.0416666682em;vertical-align:-.125em}.fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-.1875em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:var(--fa-li-margin,2.5em);padding-left:0}.fa-ul>li{position:relative}.fa-li{left:calc(var(--fa-li-width,2em) * -1);position:absolute;text-align:center;width:var(--fa-li-width,2em);line-height:inherit}.fa-border{border-color:var(--fa-border-color,#eee);border-radius:var(--fa-border-radius,.1em);border-style:var(--fa-border-style,solid);border-width:var(--fa-border-width,.08em);padding:var(--fa-border-padding,.2em .25em .15em)}.fa-pull-left{float:left;margin-right:var(--fa-pull-margin,.3em)}.fa-pull-right{float:right;margin-left:var(--fa-pull-margin,.3em)}.fa-beat{-webkit-animation-name:fa-beat;animation-name:fa-beat;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-bounce{-webkit-animation-name:fa-bounce;animation-name:fa-bounce;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1))}.fa-fade{-webkit-animation-name:fa-fade;animation-name:fa-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-beat-fade{-webkit-animation-name:fa-beat-fade;animation-name:fa-beat-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-flip{-webkit-animation-name:fa-flip;animation-name:fa-flip;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-shake{-webkit-animation-name:fa-shake;animation-name:fa-shake;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,2s);animation-duration:var(--fa-animation-duration,2s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin-reverse{--fa-animation-direction:reverse}.fa-pulse,.fa-spin-pulse{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,steps(8));animation-timing-function:var(--fa-animation-timing,steps(8))}@media (prefers-reduced-motion:reduce){.fa-beat,.fa-beat-fade,.fa-bounce,.fa-fade,.fa-flip,.fa-pulse,.fa-shake,.fa-spin,.fa-spin-pulse{-webkit-animation-delay:-1ms;animation-delay:-1ms;-webkit-animation-duration:1ms;animation-duration:1ms;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-duration:0s;transition-duration:0s}}@-webkit-keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@-webkit-keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@-webkit-keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@-webkit-keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@-webkit-keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@-webkit-keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}.fa-rotate-by{-webkit-transform:rotate(var(--fa-rotate-angle,0));transform:rotate(var(--fa-rotate-angle,0))}.fa-stack{display:inline-block;vertical-align:middle;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0;z-index:var(--fa-stack-z-index,auto)}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:var(--fa-inverse,#fff)}.fa-sr-only,.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.fa-sr-only-focusable:not(:focus),.sr-only-focusable:not(:focus){position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fa-duotone.fa-inverse,.fad.fa-inverse{color:var(--fa-inverse,#fff)}</style><link href="./Task 2 — D195 Data Analytics Capstone_files/theme.css" rel="stylesheet">
+<link href="./Task 2 — D195 Data Analytics Capstone_files/bootstrap.css" rel="stylesheet">
+<link href="./Task 2 — D195 Data Analytics Capstone_files/pydata-sphinx-theme.css" rel="stylesheet">
+
+  
+  <link href="./Task 2 — D195 Data Analytics Capstone_files/all.min.css" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://ashejim.github.io/D195/_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://ashejim.github.io/D195/_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://ashejim.github.io/D195/_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/sphinx-book-theme.css">
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/togglebutton.css">
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/copybutton.css">
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css">
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/sphinx-thebe.css">
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/sphinx-design.min.css">
+    <link rel="stylesheet" type="text/css" href="./Task 2 — D195 Data Analytics Capstone_files/my_css.css">
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="./Task 2 — D195 Data Analytics Capstone_files/bootstrap.js.download">
+<link rel="preload" as="script" href="./Task 2 — D195 Data Analytics Capstone_files/pydata-sphinx-theme.js.download">
+  <script src="./Task 2 — D195 Data Analytics Capstone_files/all.min.js.download"></script>
+
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/documentation_options.js.download"></script>
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/doctools.js.download"></script>
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/sphinx_highlight.js.download"></script>
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/clipboard.min.js.download"></script>
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/copybutton.js.download"></script>
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/sphinx-book-theme.js.download"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/togglebutton.js.download"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="./Task 2 — D195 Data Analytics Capstone_files/design-tabs.js.download"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="./Task 2 — D195 Data Analytics Capstone_files/sphinx-thebe.js.download"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="./Task 2 — D195 Data Analytics Capstone_files/tex-mml-chtml.js.download"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'task2';</script>
+    <link rel="index" title="Index" href="https://ashejim.github.io/D195/genindex.html">
+    <link rel="search" title="Search" href="https://ashejim.github.io/D195/search.html">
+    <link rel="next" title="Task 3" href="https://ashejim.github.io/D195/task3.html">
+    <link rel="prev" title="Task 1" href="https://ashejim.github.io/D195/task1.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="docsearch:language" content="en">
+  <link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-math {
+  display: inline-block;
+  text-align: left;
+  line-height: 0;
+  text-indent: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  font-size-adjust: none;
+  letter-spacing: normal;
+  border-collapse: collapse;
+  word-wrap: normal;
+  word-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 1px 0;
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="CHTML"][display="true"] mjx-math {
+  padding: 0;
+}
+
+mjx-container[jax="CHTML"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="CHTML"][justify="right"] {
+  text-align: right;
+}
+
+mjx-TeXAtom {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-mo {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-stretchy-h {
+  display: inline-table;
+  width: 100%;
+}
+
+mjx-stretchy-h > * {
+  display: table-cell;
+  width: 0;
+}
+
+mjx-stretchy-h > * > mjx-c {
+  display: inline-block;
+  transform: scalex(1.0000001);
+}
+
+mjx-stretchy-h > * > mjx-c::before {
+  display: inline-block;
+  width: initial;
+}
+
+mjx-stretchy-h > mjx-ext {
+  /* IE */ overflow: hidden;
+  /* others */ overflow: clip visible;
+  width: 100%;
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c::before {
+  transform: scalex(500);
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c {
+  width: 0;
+}
+
+mjx-stretchy-h > mjx-beg > mjx-c {
+  margin-right: -.1em;
+}
+
+mjx-stretchy-h > mjx-end > mjx-c {
+  margin-left: -.1em;
+}
+
+mjx-stretchy-v {
+  display: inline-block;
+}
+
+mjx-stretchy-v > * {
+  display: block;
+}
+
+mjx-stretchy-v > mjx-beg {
+  height: 0;
+}
+
+mjx-stretchy-v > mjx-end > mjx-c {
+  display: block;
+}
+
+mjx-stretchy-v > * > mjx-c {
+  transform: scaley(1.0000001);
+  transform-origin: left center;
+  overflow: hidden;
+}
+
+mjx-stretchy-v > mjx-ext {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  /* IE */ overflow: hidden;
+  /* others */ overflow: visible clip;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c::before {
+  width: initial;
+  box-sizing: border-box;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c {
+  transform: scaleY(500) translateY(.075em);
+  overflow: visible;
+}
+
+mjx-mark {
+  display: inline-block;
+  height: 0px;
+}
+
+mjx-c {
+  display: inline-block;
+}
+
+mjx-utext {
+  display: inline-block;
+  padding: .75em 0 .2em 0;
+}
+
+mjx-mn {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-mi {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+
+mjx-c.mjx-c22EE::before {
+  padding: 1.3em 0.278em 0.03em 0;
+  content: "\22EE";
+}
+
+mjx-c.mjx-c35::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "5";
+}
+
+mjx-c.mjx-c30::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "0";
+}
+
+mjx-c.mjx-c28::before {
+  padding: 0.75em 0.389em 0.25em 0;
+  content: "(";
+}
+
+mjx-c.mjx-c31::before {
+  padding: 0.666em 0.5em 0 0;
+  content: "1";
+}
+
+mjx-c.mjx-c210E.TEX-I::before {
+  padding: 0.694em 0.576em 0.011em 0;
+  content: "h";
+}
+
+mjx-c.mjx-c1D45C.TEX-I::before {
+  padding: 0.441em 0.485em 0.011em 0;
+  content: "o";
+}
+
+mjx-c.mjx-c1D462.TEX-I::before {
+  padding: 0.442em 0.572em 0.011em 0;
+  content: "u";
+}
+
+mjx-c.mjx-c1D45F.TEX-I::before {
+  padding: 0.442em 0.451em 0.011em 0;
+  content: "r";
+}
+
+mjx-c.mjx-c1D460.TEX-I::before {
+  padding: 0.442em 0.469em 0.01em 0;
+  content: "s";
+}
+
+mjx-c.mjx-c1D44E.TEX-I::before {
+  padding: 0.441em 0.529em 0.01em 0;
+  content: "a";
+}
+
+mjx-c.mjx-c1D461.TEX-I::before {
+  padding: 0.626em 0.361em 0.011em 0;
+  content: "t";
+}
+
+mjx-c.mjx-c2026::before {
+  padding: 0.12em 1.172em 0 0;
+  content: "\2026";
+}
+
+mjx-c.mjx-c1D45D.TEX-I::before {
+  padding: 0.442em 0.503em 0.194em 0;
+  content: "p";
+}
+
+mjx-c.mjx-c1D6FC.TEX-I::before {
+  padding: 0.442em 0.64em 0.011em 0;
+  content: "\3B1";
+}
+
+mjx-c.mjx-c3D::before {
+  padding: 0.583em 0.778em 0.082em 0;
+  content: "=";
+}
+
+mjx-c.mjx-c2E::before {
+  padding: 0.12em 0.278em 0 0;
+  content: ".";
+}
+
+mjx-c.mjx-c32::before {
+  padding: 0.666em 0.5em 0 0;
+  content: "2";
+}
+
+mjx-c.mjx-c2265::before {
+  padding: 0.636em 0.778em 0.138em 0;
+  content: "\2265";
+}
+
+mjx-c.mjx-c36::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "6";
+}
+</style></head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="" class="scrolled">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="https://ashejim.github.io/D195/task2.html#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top" style="display: none;">
+    <svg class="svg-inline--fa fa-arrow-up" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path></svg><!-- <i class="fa-solid fa-arrow-up"></i> Font Awesome fontawesome.com -->Back to top</button>
+
+  
+  <input type="checkbox" class="sidebar-toggle" id="pst-primary-sidebar-checkbox">
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox" class="sidebar-toggle" id="pst-secondary-sidebar-checkbox">
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center" action="https://ashejim.github.io/D195/search.html" method="get">
+  <svg class="svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fa-solid fa-magnifying-glass"></i> Font Awesome fontawesome.com -->
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer" style="height: auto;">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none noprint">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar noprint">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="https://ashejim.github.io/D195/intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="./Task 2 — D195 Data Analytics Capstone_files/emp_rule_logo.png" class="logo__image only-light" alt="D195 Data Analytics Capstone - Home">
+    <script>document.write(`<img src="_static/emp_rule_logo.png" class="logo__image only-dark" alt="D195 Data Analytics Capstone - Home"/>`);</script><img src="./Task 2 — D195 Data Analytics Capstone_files/emp_rule_logo.png" class="logo__image only-dark" alt="D195 Data Analytics Capstone - Home">
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+   <button class="btn search-button-field search-button__button" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="Search">
+    <svg class="svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fa-solid fa-magnifying-glass"></i> Font Awesome fontawesome.com -->
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ </div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="https://ashejim.github.io/D195/intro.html">
+                    Welcome to D195 and D502!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="https://ashejim.github.io/D195/task1.html">Task 1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="https://ashejim.github.io/D195/task2.html#">Task 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://ashejim.github.io/D195/task3.html">Task 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://ashejim.github.io/D195/resources.html">Resources</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://ashejim.github.io/D195/ci_page.html">Course Faculty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://ashejim.github.io/D195/ci_d195.html">Course Faculty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://ashejim.github.io/D195/ci_other.html">DMDA, Software, and other Course Faculty</a></li>
+</ul><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="https://ashejim.github.io/D195/support_this_page.html">Help Support this Website</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none noprint">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" aria-label="Toggle primary sidebar" data-bs-original-title="Toggle primary sidebar">
+  <svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg><!-- <span class="fa-solid fa-bars"></span> Font Awesome fontawesome.com -->
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <svg class="svg-inline--fa fa-github" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark">
+      
+      
+      
+      <li><a href="https://github.com/ashejim/D195" target="_blank" class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-original-title="Source repository">
+  
+
+<span class="btn__icon-container">
+  <svg class="svg-inline--fa fa-github" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/ashejim/D195/issues/new?title=Issue%20on%20page%20%2Ftask2.html&amp;body=Your%20issue%20content%20here." target="_blank" class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-original-title="Open an issue">
+  
+
+<span class="btn__icon-container">
+  <svg class="svg-inline--fa fa-lightbulb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"></path></svg><!-- <i class="fas fa-lightbulb"></i> Font Awesome fontawesome.com -->
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <svg class="svg-inline--fa fa-download" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg><!-- <i class="fas fa-download"></i> Font Awesome fontawesome.com -->
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark">
+      
+      
+      
+      <li><a href="https://ashejim.github.io/D195/_sources/task2.md" target="_blank" class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-original-title="Download source file">
+  
+
+<span class="btn__icon-container">
+  <svg class="svg-inline--fa fa-file" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"></path></svg><!-- <i class="fas fa-file"></i> Font Awesome fontawesome.com -->
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()" class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-original-title="Print to PDF">
+  
+
+<span class="btn__icon-container">
+  <svg class="svg-inline--fa fa-file-pdf" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 144-208 0c-35.3 0-64 28.7-64 64l0 144-48 0c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()" class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" aria-label="Fullscreen mode" data-bs-original-title="Fullscreen mode">
+  
+
+<span class="btn__icon-container">
+  <svg class="svg-inline--fa fa-expand" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"></path></svg><!-- <i class="fas fa-expand"></i> Font Awesome fontawesome.com -->
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="light/dark">
+    <svg class="svg-inline--fa fa-sun theme-switch fa-lg" data-mode="light" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"></path></svg><!-- <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i> Font Awesome fontawesome.com -->
+    <svg class="svg-inline--fa fa-moon theme-switch fa-lg" data-mode="dark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg><!-- <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i> Font Awesome fontawesome.com -->
+    <svg class="svg-inline--fa fa-circle-half-stroke theme-switch fa-lg" data-mode="auto" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-half-stroke" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path></svg><!-- <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i> Font Awesome fontawesome.com -->
+  </button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="Search">
+    <svg class="svg-inline--fa fa-magnifying-glass fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fa-solid fa-magnifying-glass fa-lg"></i> Font Awesome fontawesome.com -->
+  </button>
+
+<button class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" aria-label="Toggle secondary sidebar" data-bs-original-title="Toggle secondary sidebar">
+    <svg class="svg-inline--fa fa-list" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"></path></svg><!-- <span class="fa-solid fa-list"></span> Font Awesome fontawesome.com -->
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Task 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#do-the-analysis-now">Do the Analysis Now!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#write-task-2">Write Task 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a-proposal-overview">A: Proposal Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a1-research-question-or-organizational-need">A1: Research Question or Organizational Need</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#research-question-or-organizational-need">Research Question OR Organizational Need?</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#what-is-a-research-question">What is a Research Question?</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a2-context-background">A2: Context &amp; Background</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a3-a3a-summary-of-works-project-relation">A3 &amp; A3A: Summary of Works &amp; Project Relation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a4-summary-of-data-analytics-solution">A4: Summary of Data Analytics Solution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a5-benefits-support-of-decision-making-process">A5: Benefits &amp; Support of Decision-Making Process</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b-data-analytics-project-plan">B: Data Analytics Project Plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b1-goals-objectives-deliverables">B1: Goals, Objectives, &amp; Deliverables</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b2-scope-of-project">B2: Scope of Project</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b3-standard-methodology">B3: Standard Methodology</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b4-timeline-milestones">B4: Timeline &amp; Milestones</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b5-resources-costs">B5: Resources &amp; Costs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b6-criteria-for-success">B6: Criteria for Success</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c-design-of-data-analytics-solution">C: Design of Data Analytics Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c1-hypothesis">C1: Hypothesis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c2-c2a-analytical-method">C2 &amp; C2A: Analytical Method</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c3-tools-environment">C3: Tools &amp; Environment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c4-c4a-methods-metrics-to-evaluate-statistical-significance">C4 &amp; C4A: Methods &amp; Metrics to Evaluate Statistical Significance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c5-practical-significance">C5: Practical Significance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c6-visual-communication">C6: Visual Communication</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d-description-of-dataset">D: Description of Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d1-source-of-data">D1: Source of Data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d2-appropriateness-of-dataset">D2: Appropriateness of Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d3-data-collection-methods">D3: Data Collection Methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d4-observations-on-quality-completeness-of-data">D4: Observations on Quality &amp; Completeness of Data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d5-d5a-data-governance-privacy-security-ethical-legal-regulatory-compliances">D5 &amp; D5A: Data Governance, Privacy, Security, Ethical, Legal, &amp; Regulatory Compliances</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#grammar-sources-and-apa">Grammar, Sources, and APA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#faq">FAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#i-ve-completed-task-2-should-i-send-it-to-my-course-instructor-for-review">I’ve completed task 2. Should I send it to my course instructor for review?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#are-there-any-examples">Are there any examples?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#how-long-should-task-2-be-is-there-a-page-length-required">How long should task 2 be? Is there a page length required?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#how-many-submission-attempts-do-i-have">How many submission attempts do I have?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#i-can-t-find-sources-for-section-a3-summary-of-published-works-what-can-i-do">I can’t find sources for section A3, <em>Summary of Published Works</em>. What can I do?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#my-task-two-was-returned-for-sources-stating-citations-are-missing-but-i-properly-cited-everything">My task two was returned for <em>Sources</em> stating citations are missing, but I properly cited everything</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#how-complex-does-my-data-or-analytic-method-need-to-be">How complex does my data or analytic method need to be?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#are-there-any-restrictions-on-which-datasets-i-can-choose">Are there any restrictions on which datasets I can choose?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#questions-comments-or-suggestions">Questions, comments, or suggestions?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="task-2">
+<h1>Task 2<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#task-2" title="Link to this heading">#</a></h1>
+<p>The Proposal -a detailed paper outlining your question/problem and planned data analysis solution.</p>
+<!-- <div class = "tasklist">
+
+   <input type="checkbox"> Pass [task 1](task1).
+
+   <input type="checkbox"> Complete the data analysis which includes a statistical test for significance or model with a performance metric. Alternatively, this can be done before writing task 3, but some amount of data investigation should be done before completing A1.
+
+   <!-- <input type="checkbox"> Watch *all* of the [**Task 2 videos**](resources:task2) (they are short). -->
+   <!-- <input type="checkbox"> Review the corresponding task 2 section and then write that section to meet the rubric requirements independently. Here's a *suggested* order:
+
+   <div class = "tasklist2">
+
+   <input type="checkbox"> Complete [A1](task2:A1). Most sections must align with your chosen research question or organizational need.
+
+   <input type="checkbox"> Complete [C4](task2:C4) & [C1](task2:C1). A statistical test or model supporting A1 is *the only specific rigorous requirement in tasks 2 and 3 rubrics.* With this in place, the project has the necessary foundations to pass.
+
+   <input type="checkbox"> Complete [C2](task2:C2), [C3](task2:C3), & [C5](task2:C5). These sections describe the details, development, and practical application of C1 & C4.
+
+   <input type="checkbox"> Complete [C6](task2:C6). Graphs supporting C4 or describing the data used for C4.
+
+   <input type="checkbox"> Complete [D1](task2:D1)-[D5](task2:D5). These sections describe the data and data preparation necessary for C or other analyses.
+
+   <input type="checkbox"> Complete [B1](task2:B1)-[B6](task2:B6), the "business plan" for your project. This will outline and repeat parts C & D from a management perspective. 
+
+   <input type="checkbox"> Complete [A2](task2:A2), [A4](task2:A4), [A5](task2:A5). summarizing the project and its purpose.
+
+   <input type="checkbox"> Complete [A3](task2:A3). Include 3 works related to the project.
+
+   </div>
+
+   <input type="checkbox"> Following APA guidelines, [check grammar and sources](task2:grammar), review the sources in the [task 2 examples](resources:examples), export as a pdf, and submit.
+
+   <input type="checkbox"> Start [task 3](task3)!
+
+</div> -->
+<section id="do-the-analysis-now">
+<span id="task2-do-the-analysis-now"></span><h2>Do the Analysis Now!<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#do-the-analysis-now" title="Link to this heading">#</a></h2>
+<p>Task 2 is written as a proposal. However, parts C of task 2 and F of task 3 require a specific type of data analysis. An inductive argument using descriptive methods will not meet the requirements of these sections. Analyzing the data before writing task 2 will help:</p>
+<ol class="arabic simple">
+<li><p>Ensure the minimum requirements of the project will be met.</p></li>
+<li><p>Better align the research question/organizational need with project outcomes.</p></li>
+<li><p>Better align tasks 2 and 3 allowing task 3 to be completed faster.</p></li>
+</ol>
+<p>Though more of an initial time investment, the analysis must be done at some point. Doing it first allows Task 2 to be written to known (rather than anticipated) results and allows Task 3 to be completed by (mostly) rewriting Task 2.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Throughout this page, we will be assuming you have completed the data analysis.</p>
+</div>
+</section>
+<section id="write-task-2">
+<h2>Write Task 2<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#write-task-2" title="Link to this heading">#</a></h2>
+<p>Write your proposal following <strong>Task 2: Project Proposal template</strong>:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://1drv.ms/w/s!Av4KQnJfiBxmgqVWgpkLPEi_AnrNLQ?e=emh2fI">Task 2: the Proposal template</a></p>
+</div></blockquote>
+<!-- > TODO: using OneDrive link as the doc is still in development. Eventually will replace the link with a relative link to the repo. -->
+<p>To gauge the level of detail evaluators typically expect, see the <a class="reference internal" href="https://ashejim.github.io/D195/resources.html#resources-examples"><span class="std std-ref">task 2 examples</span></a> - passing, albeit not the greatest, projects. Individual sections should be written to individually meet their respective rubric section requirements.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Sections are assessed independently against the rubric requirements, i.e., when evaluating a section, the evaluator will <em>check for the fulfillment of the requirements within that section</em>. They <em>don’t</em> assess writing style. You can (and sometimes must) reuse content from other areas as needed. It’s not about writing something fun to read -it’s about demonstrating that the competencies as defined by the rubric requirements are met.</p>
+</div>
+<section id="a-proposal-overview">
+<span id="task2-a"></span><h3>A: Proposal Overview<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#a-proposal-overview" title="Link to this heading">#</a></h3>
+<p>The Proposal Overview summarizes one question or organizational need that you intend to answer by collecting and analyzing a set of data. Think of it as a summary meant to be read by upper management or a general audience.</p>
+<p>This part introduces and summarizes a thesis (A1), a literature review (A3), a problem (A2), and your solution (A4 &amp; A5). This section can establish a roadmap for the rest of the paper, but if you write it first expect the need to revisit and revise it once other sections are complete. Remember to keep the introduction concise but informative, providing enough information to clearly meet the requirements of individual sections.</p>
+<section id="a1-research-question-or-organizational-need">
+<span id="task1-a1"></span><h4>A1: Research Question or Organizational Need<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#a1-research-question-or-organizational-need" title="Link to this heading">#</a></h4>
+<p>Much of Tasks 2 and 3 must align with this section. Particularly the rigorous method from part C. After investigating your data, you may need to adjust from what was provided in <a class="reference internal" href="https://ashejim.github.io/D195/task1.html#task1"><span class="std std-ref">Task 1</span></a>. Making changes from Task 1 is acceptable (and somewhat expected) without resubmitting Task 1. However, we recommend contacting your <a class="reference internal" href="https://ashejim.github.io/D195/ci_page.html"><span class="doc std std-doc">assigned course instructor</span></a> if significant changes are necessary.</p>
+<section id="research-question-or-organizational-need">
+<h5>Research Question OR Organizational Need?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#research-question-or-organizational-need" title="Link to this heading">#</a></h5>
+<p>“Research question or organizational need,” is the language of the rubric. Addressing a research question best fits the rubric requirements, and any research question can be described to have an organizational benefit (the pragmatism of which is not assessed). So most projects should choose a research question and advice on this page will favor that direction.</p>
+</section>
+<section id="what-is-a-research-question">
+<h5>What is a Research Question?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#what-is-a-research-question" title="Link to this heading">#</a></h5>
+<p>A research question should identify what your analysis plans to discover. For this project, it should be:</p>
+<ol class="arabic simple">
+<li><p>Narrow/specific enough to define an answerable question.</p></li>
+<li><p>Supportable with a statistical test or model.</p></li>
+<li><p>Feasible within your available time, resources, and abilities.</p></li>
+</ol>
+<p>A good research question should also be interesting, relevant, and novel. However, these characteristics are not directly or indirectly assessed as the capstone is meant to demonstrate proficiencies in analysis -not scientific research. Particularly do not worry about the novelty of projects as we have no shareable list of previous topics or investigated datasets.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Many of the rubric requirements must align with A1. Particularly <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2:C"><span class="xref myst">part C</span></a>](task2:C). If you’ve followed the recommendation of first completing the analysis, your research question can be directly related to your <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2-c1"><span class="std std-ref">hypothesis</span></a></p>
+</div>
+ <!--TODO HERE  -->
+<!-- :::{sidebar} Watch 
+<iframe src="https://wgu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=db8381ab-1659-49e9-b5fc-ebb844c66944&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" title="A1, A2, anb A3: The Proposal" style="border: 1px solid #464646;" class="center" allowfullscreen allow="autoplay">
+</iframe>
+::: -->
+</section>
+</section>
+<section id="a2-context-background">
+<span id="task2-a2"></span><h4>A2: Context &amp; Background<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#a2-context-background" title="Link to this heading">#</a></h4>
+<p>Briefly detail the project’s background and provide enough context making the purpose of your project clear.</p>
+</section>
+<section id="a3-a3a-summary-of-works-project-relation">
+<span id="task2-a3"></span><h4>A3 &amp; A3A: Summary of Works &amp; Project Relation<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#a3-a3a-summary-of-works-project-relation" title="Link to this heading">#</a></h4>
+<p>Think of this section as a literature review where you summarize a work (A3) and then relate it to your project (A3A). They need only connect to an aspect of your project; they don’t need to align with it entirely. You can use anything created by an industry professional, e.g., online articles, whitepapers, technical documentation, etc. Most importantly, you must have <strong>three</strong> different works cited following <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2:grammar"><span class="xref myst">APA guidelines</span></a> using in-text citations, e.g., (Author, year). Typically, papers cite sources as needed, but for evaluation purposes, they added this section to demonstrate research.</p>
+<ol class="arabic simple">
+<li><p><strong>Review a work.</strong> For example, online articles, blogs, case studies, white papers, videos, etc.</p></li>
+<li><p><strong>Summarize the work.</strong> Simply tell your reader what’s in the resource you reviewed, no need to offer an opinion or analyze it -simply summarize the content. We recommend 1-2 paragraphs per work.</p></li>
+<li><p><strong>Relate the work to your project.</strong> Following the summary, describe how the work expands the context of the problem or supports the implementation solution.</p></li>
+<li><p><strong>Include an APA style in-text citation,</strong> e.g., (Author, year); follow  [APA guidelines and use the MS reference tool] see (task2:grammar)</p></li>
+</ol>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wgu.libguides.com/friendly.php?s=library">WGU’s library</a></p></li>
+<li><p><a class="reference external" href="https://scholar.google.com/">google.scholar.com</a></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Stuck? Return to this section later. You will likely collect sources while conducting research for other sections. The works do not have to be a one-to-one match to your project. What’s accepted is very broad.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can search <a class="reference external" href="https://wgu.libguides.com/friendly.php?s=library">WGU’s library</a> and other open-source libraries using <a class="reference external" href="https://scholar.google.com/">google.scholar.com</a> Go to &gt;’Google.scholar&gt;setting&gt;libraires&gt;’
+and then add WGU and other libraries.</p>
+<p><img src="./Task 2 — D195 Data Analytics Capstone_files/google_scholar_demo.gif" height="300px" alt="A short animated image demonstrating how to add WGU&#39;s library to google.scholar.com"></p>
+</div>
+</section>
+<section id="a4-summary-of-data-analytics-solution">
+<span id="task2-a4"></span><h4>A4: Summary of Data Analytics Solution<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#a4-summary-of-data-analytics-solution" title="Link to this heading">#</a></h4>
+<p>Summarize the proposed solution. Include a summary of the analytic method(s) and its implementation summarized in <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2:B3"><span class="xref myst">B3</span></a> and detailed in <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2:C4"><span class="xref myst">C4</span></a>. Detail how the solution:</p>
+<ul class="simple">
+<li><p>Will be realistically implemented.</p></li>
+<li><p>Address the research question or organizational need.</p></li>
+</ul>
+</section>
+<section id="a5-benefits-support-of-decision-making-process">
+<span id="task1-a5"></span><h4>A5: Benefits &amp; Support of Decision-Making Process<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#a5-benefits-support-of-decision-making-process" title="Link to this heading">#</a></h4>
+<p>Describe how the solution from A4 will:</p>
+<ul class="simple">
+<li><p>Provide a benefit and why.</p></li>
+<li><p>Assist in decision-making and why.</p></li>
+</ul>
+<p>The benefit can directly or indirectly be related to solution assisting in decision-making.</p>
+</section>
+</section>
+<section id="b-data-analytics-project-plan">
+<span id="task2-b"></span><h3>B: Data Analytics Project Plan<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#b-data-analytics-project-plan" title="Link to this heading">#</a></h3>
+<p>In this part, you will discuss the design details of your data analytics solution. Think of it as a business plan for <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2:C"><span class="xref myst">part C</span></a> targeting middle management.</p>
+<section id="b1-goals-objectives-deliverables">
+<span id="task2-b1"></span><h4>B1: Goals, Objectives, &amp; Deliverables<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#b1-goals-objectives-deliverables" title="Link to this heading">#</a></h4>
+<p><strong>Goals</strong> and <strong>objectives</strong> are very similar. Goals are broader, defining the end you are trying to achieve (e.g., improving customer service). You need at least one goal. Objectives are more specific, often measurable steps supporting the goal (e.g., real-time inventory updates for customers). Goals and objectives can be considered high-level and mid-management tasks, respectively. <strong>Deliverables</strong> are tangible tasks completed supporting the objectives (e.g., an inventory status screen reporting real-time inventory to customers).</p>
+<p>For this section, you must:</p>
+<ul class="simple">
+<li><p>Describe each goal (every project should have at least one)</p></li>
+<li><p>Describe each objective and how the objectives support the goal(s).</p></li>
+<li><p>Describe each deliverable, and how each deliverable supports an objective.</p></li>
+</ul>
+<p>Each goal, objective, and deliverable should align with each other, the project as described in section A, and the timeline provided in section B4. A nested bullet point format will help evaluators identify descriptions and intended alignment.</p>
+<div class="tip admonition">
+<p class="admonition-title">Example</p>
+<ul class="simple">
+<li><p>Goal 1: The goal of this project is to …</p>
+<ul>
+<li><p>Objective 1.1: Determine if …
+- Deliverable 1.1.1: The deliverable for this objective is …
+- Deliverable 1.1.2: The deliverable for this objective is …</p></li>
+<li><p>Objective 1.2: Provide a …
+- Deliverable 1.2.1: The deliverable for this objective is …</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Also, see part B1 of these <a class="reference internal" href="https://ashejim.github.io/D195/resources.html#resources-examples"><span class="std std-ref">examples</span></a>.</p>
+</section>
+<section id="b2-scope-of-project">
+<h4>B2: Scope of Project<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#b2-scope-of-project" title="Link to this heading">#</a></h4>
+<p>Describe:</p>
+<ul class="simple">
+<li><p>What the project will entail.</p></li>
+<li><p>What the project will <em>not</em> entail.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don’t forget the “not” part!
+You must include at least <em>one</em> specific item outside the project’s scope. Overlooking this is one of the most common reasons for returns.</p>
+</div>
+</section>
+<section id="b3-standard-methodology">
+<h4>B3: Standard Methodology<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#b3-standard-methodology" title="Link to this heading">#</a></h4>
+<p>The methodology is the process you will follow when implementing your solution. Include specific details to adequately describe the steps that will take place in each phase. In this section, you must:</p>
+<ol class="arabic simple">
+<li><p>Identify a “standard” methodology used to plan the project, e.g., Waterfall or ADDIE.</p></li>
+<li><p>Describe the project steps to be completed in each phase of the methodology, e.g., analysis, design, etc.</p></li>
+</ol>
+<p>The second step provides a detailed implementation plan also outlined in <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2:A2"><span class="xref myst">section A2</span></a>. If using a less-known methodology, relate it to a “standard” one.</p>
+</section>
+<section id="b4-timeline-milestones">
+<h4>B4: Timeline &amp; Milestones<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#b4-timeline-milestones" title="Link to this heading">#</a></h4>
+<p>Provide a timeline aligning with the milestones and deliverables described in section <a class="reference internal" href="https://ashejim.github.io/D195/task2.html#task2-b1"><span class="std std-ref">B1</span></a>. While a table is not specifically required, it provides a succinct presentation satisfying the requirements of B.4., and it is what evaluators have come to expect.</p>
+<!-- to customize admonitions
+https://pradyunsg.me/furo/reference/admonitions/ -->
+<div class="hint admonition">
+<p class="admonition-title">Example</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Milestone or Deliverable</p></th>
+<th class="head"><p>Duration</p></th>
+<th class="head"><p>Projected Start Date</p></th>
+<th class="head"><p>Projected End date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Some milestones</p></td>
+<td><p>7 days</p></td>
+<td><p>7/23/2022</p></td>
+<td><p>7/30/2022</p></td>
+</tr>
+<tr class="row-odd"><td><p>Some deliverables</p></td>
+<td><p>14 days</p></td>
+<td><p>7/16/2022</p></td>
+<td><p>7/30/2022</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="0" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EE"></mjx-c></mjx-mo></mjx-texatom></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mo>⋮</mo></mrow></math></mjx-assistive-mml></mjx-container></span></p></td>
+<td><p><span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="1" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EE"></mjx-c></mjx-mo></mjx-texatom></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mo>⋮</mo></mrow></math></mjx-assistive-mml></mjx-container></span></p></td>
+<td><p><span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="2" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EE"></mjx-c></mjx-mo></mjx-texatom></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mo>⋮</mo></mrow></math></mjx-assistive-mml></mjx-container></span></p></td>
+<td><p><span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="3" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-texatom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EE"></mjx-c></mjx-mo></mjx-texatom></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mo>⋮</mo></mrow></math></mjx-assistive-mml></mjx-container></span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="b5-resources-costs">
+<h4>B5: Resources &amp; Costs<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#b5-resources-costs" title="Link to this heading">#</a></h4>
+<p>Include a list of all necessary resources and the approximate cost of each resource. The budget must include estimated costs for <em>hardware</em>, <em>software</em>, and <em>work hours</em>.</p>
+<div class="hint admonition">
+<p class="admonition-title">Example</p>
+<ol class="arabic simple">
+<li><p>Hardware item: $1000</p></li>
+<li><p>Software item 1: No cost</p></li>
+<li><p>Software item 2: No cost</p></li>
+<li><p>10 work hours: <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="4" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45C TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D462 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D460 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>500</mn><mo stretchy="false">(</mo><mn>10</mn><mi>h</mi><mi>o</mi><mi>u</mi><mi>r</mi><mi>s</mi><mi>a</mi><mi>t</mi></math></mjx-assistive-mml></mjx-container></span>50 per hour)</p></li>
+<li><p><span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="5" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2026"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>…</mo></math></mjx-assistive-mml></mjx-container></span></p></li>
+</ol>
+</div>
+<p>Be realistic as possible when estimating costs. However, this is not a business project and values are not rigorously assessed. The minimum number of listed items is three.</p>
+</section>
+<section id="b6-criteria-for-success">
+<h4>B6: Criteria for Success<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#b6-criteria-for-success" title="Link to this heading">#</a></h4>
+<p>Provide specific objective means of assessing success. You should base these criteria on successful execution and correct interpretation of your methods -not the results. It is acceptable that a test fails to find results statistically significant provided <em>the conclusion and methods are appropriate.</em></p>
+<p>The criteria can be metrics, but also can be project-related task that can be counted as having been completed. See B.6 of the <a class="reference internal" href="https://ashejim.github.io/D195/resources.html#resources-examples"><span class="std std-ref">Task 2 examples</span></a>.</p>
+</section>
+</section>
+<section id="c-design-of-data-analytics-solution">
+<h3>C: Design of Data Analytics Solution<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#c-design-of-data-analytics-solution" title="Link to this heading">#</a></h3>
+<p>In this part, you will discuss the details of your data analytics solution targeting an expert audience -fellow data analysts. These sections contain the rigorous data analysis requirements of task 2. Thus, we recommend completing at least a rough outline of this part before investing time in parts A and B.</p>
+<section id="c1-hypothesis">
+<span id="task2-c1"></span><h4>C1: Hypothesis<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#c1-hypothesis" title="Link to this heading">#</a></h4>
+<p>Provide a hypothesis supporting the research question or organizational need given in section A1. The minimum required hypothesis is one. Your hypothesis must be supportable by a hypothesis test or model.</p>
+<p>If using a statistical test, you’ll conduct a hypothesis test and you should state the alternative hypothesis you’ll use here. For models, state a claim supportable by the metric you plan to use to measure the model’s success.</p>
+</section>
+<section id="c2-c2a-analytical-method">
+<span id="task2-c2"></span><h4>C2 &amp; C2A: Analytical Method<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#c2-c2a-analytical-method" title="Link to this heading">#</a></h4>
+<p>Identify (C2) and justify (C2A) each statistical test or model which will support each hypothesis given in section C1. Summarize how each method will be performed or developed. The minimum required method is one per hypothesis.</p>
+</section>
+<section id="c3-tools-environment">
+<h4>C3: Tools &amp; Environment<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#c3-tools-environment" title="Link to this heading">#</a></h4>
+<p>Identify the tools, e.g., IDE, languages, libraries, etc., which will be used to complete the analytical method(s) described in section C2.</p>
+</section>
+<section id="c4-c4a-methods-metrics-to-evaluate-statistical-significance">
+<h4>C4 &amp; C4A: Methods &amp; Metrics to Evaluate Statistical Significance<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#c4-c4a-methods-metrics-to-evaluate-statistical-significance" title="Link to this heading">#</a></h4>
+<p>For each <strong>statistical test</strong>, provide the following information (C4):</p>
+<ul class="simple">
+<li><p>A null hypothesis (the opposite of your hypothesis).</p></li>
+<li><p>The name of the proposed statistical test, e.g., 1-sample t-test, Chi-square, correlation, etc.</p></li>
+<li><p>The metric(s) generated from that test (e.g., a t-stat) from which probability (the <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="6" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></mjx-assistive-mml></mjx-container></span>-value) is derived.</p></li>
+<li><p>The alpha value (denoted <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="7" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi></math></mjx-assistive-mml></mjx-container></span>; usually 1% or 5%) that will be used to determine statistical significance (e.g., if <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="8" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c35"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mn>.05</mn></math></mjx-assistive-mml></mjx-container></span> and <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="9" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></mjx-assistive-mml></mjx-container></span>-value <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="10" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c35"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>=</mo><mn>.025</mn></math></mjx-assistive-mml></mjx-container></span> then the null hypothesis will be rejected and there is sufficient evidence to support the hypothesis).</p></li>
+</ul>
+<p>For each <strong>model</strong>, provide the following information (C4):</p>
+<ul class="simple">
+<li><p>The type of model, e.g., supervised regression, supervised classification, etc.</p></li>
+<li><p>The name of the proposed model, e.g., linear regression, logistic regression, Bayesian, CNN, etc.</p></li>
+<li><p>The metric(s) to be used to assess performance.</p></li>
+<li><p>The benchmark to which the above metric(s) will be compared to determine the success of the model(s), e.g., “If the correlation coefficient is <span class="math notranslate nohighlight"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="11" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2265"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>≥</mo><mn>.6</mn></math></mjx-assistive-mml></mjx-container></span>, the model will be considered successful…”</p></li>
+</ul>
+<p>For each statistical test or model, describe why it is an appropriate choice (C4A). This may repeat (verbatim) parts of section C2A.</p>
+</section>
+<section id="c5-practical-significance">
+<h4>C5: Practical Significance<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#c5-practical-significance" title="Link to this heading">#</a></h4>
+<p>Practical significance refers to how meaningful your findings are in practical application. Results are practically significant when the difference is large enough to be meaningful in real life. This is subjective. But at minimum discuss some criteria to judge the practical significance and how this will be used to support the research question or organizational need from A1. Consider including an example of how the client might apply your work discussed in sections C1 through C4A.</p>
+</section>
+<section id="c6-visual-communication">
+<h4>C6: Visual Communication<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#c6-visual-communication" title="Link to this heading">#</a></h4>
+<p>Task 3, the Project Report, must include graphic visualizations (at least two) for visually communicating elements of your project (see Task 3: G2). Describe a plan to include at least two visualizations of the data, statistical test(s), or model(s). Specifically, name the types of graphs, what they will visualize, and the tools you’ll use to generate the images.</p>
+</section>
+</section>
+<section id="d-description-of-dataset">
+<h3>D: Description of Dataset<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#d-description-of-dataset" title="Link to this heading">#</a></h3>
+<p>This part discusses the current state of your data (pre-processed). Write from the assumption that the data sources have been identified, collected, and previewed, but not in any other way processed.</p>
+<section id="d1-source-of-data">
+<h4>D1: Source of Data<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#d1-source-of-data" title="Link to this heading">#</a></h4>
+<p>Simply identify each data source. The minimum number of sources is one.</p>
+</section>
+<section id="d2-appropriateness-of-dataset">
+<h4>D2: Appropriateness of Dataset<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#d2-appropriateness-of-dataset" title="Link to this heading">#</a></h4>
+<p>Describe why each data source provided in section D1 is appropriate for supporting the research question or organizational need from section A1.</p>
+</section>
+<section id="d3-data-collection-methods">
+<h4>D3: Data Collection Methods<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#d3-data-collection-methods" title="Link to this heading">#</a></h4>
+<p>Describe how each data source listed in section D.1 was collected, e.g., “the data was collected by downloading the .csv file from <em>&lt;<a class="reference external" href="http://www.kaggle.com/data_source_link.html">www.kaggle.com/data_source_link.html</a></em>.”&gt;</p>
+</section>
+<section id="d4-observations-on-quality-completeness-of-data">
+<h4>D4: Observations on Quality &amp; Completeness of Data<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#d4-observations-on-quality-completeness-of-data" title="Link to this heading">#</a></h4>
+<p>Describe both the quality and completeness of the data and any accommodation needed. Often, data is already clean and complete, but it is still necessary to comment on both.</p>
+</section>
+<section id="d5-d5a-data-governance-privacy-security-ethical-legal-regulatory-compliances">
+<h4>D5 &amp; D5A: Data Governance, Privacy, Security, Ethical, Legal, &amp; Regulatory Compliances<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#d5-d5a-data-governance-privacy-security-ethical-legal-regulatory-compliances" title="Link to this heading">#</a></h4>
+<p>Specifically, address how each of the following relates to your data and project (D5):</p>
+<ul class="simple">
+<li><p>Data governance.</p></li>
+<li><p>privacy.</p></li>
+<li><p>Security.</p></li>
+<li><p>Ethical, legal, and regulatory compliance considerations.</p></li>
+</ul>
+<p>Describe any necessary precautions (D5A). In cases where an item is not relevant, you must explain why. You only need to discuss measures for handling human data if you collected that data</p>
+</section>
+</section>
+<section id="grammar-sources-and-apa">
+<h3>Grammar, Sources, and APA<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#grammar-sources-and-apa" title="Link to this heading">#</a></h3>
+<p>It’s easy to overlook them when focusing on content, but grammar, sources, and APA formatting are the most common reasons for rejected submissions!</p>
+<p>Check your grammar using <a class="reference external" href="https://www.grammarly.com/">Grammarly.com</a> <img alt="grammarly.com icon" src="./Task 2 — D195 Data Analytics Capstone_files/icon-grammarly.png"> (it’s what the evaluators use). Style is not assessed (Grammarly marks these in blue, green, or purple), but even a few grammar errors (marked in red) will prevent competency in <em>Professional Communication</em>. The free side has been sufficient, but if using the online app, you sometimes need to wait before mistakes are caught.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Students have reported missed mistakes when using the Google Doc Grammarly extension. Therefore, we advise copying content directly into the app or purchasing the premium version compatible with MS Word.</p>
+</div>
+<p>Sources and format should follow <a class="reference external" href="https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524">APA guidelines</a>. Avoid reference errors by using the <a class="reference external" href="https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5">MS Word Reference Tool</a> to create and manage references and review this guide on how to <a class="reference external" href="https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/I-Need-Help-with-APA-Style/ta-p/33524?attachment-id=333">Avoid Common APA errors</a>.</p>
+<p>Get the best writing help from the writing experts: <a class="reference external" href="https://my.wgu.edu/success-centers/writing-center">WGU Writing Center</a>. While Writing Center Instructors cannot say whether a task will pass (no one but your specific evaluator can), they will help you revise your paper to meet WGU competency standards for professional communication, sources, and APA formatting. The Writing Center also offers live Q&amp;A sessions. See a list of upcoming events here: <a class="reference external" href="https://cm.wgu.edu/t5/Writing-Center-Knowledge-Base/Writing-Center-Live-Events/ta-p/36860">Writing Center Live Events</a>.</p>
+</section>
+</section>
+<section id="faq">
+<span id="task2-faq"></span><h2>FAQ<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#faq" title="Link to this heading">#</a></h2>
+<section id="i-ve-completed-task-2-should-i-send-it-to-my-course-instructor-for-review">
+<h3>I’ve completed task 2. Should I send it to my course instructor for review?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#i-ve-completed-task-2-should-i-send-it-to-my-course-instructor-for-review" title="Link to this heading">#</a></h3>
+<p>If you have specific questions or concerns -yes. However, in most cases, it’s best just to submit. What suffices as “sufficient detail” is highly subjective. We can always tell you to add more, but if you’ve done your best to fulfill the requirements, submit it and let them tell you which (if any) parts need to be rewritten. At best, it passes; at worst, we address the issues cited by the evaluator -and then it passes. Responding to the more narrow focus of the evaluator’s comments is generally easier than overworking the entire project.</p>
+<p>You have <em>unlimited</em> submissions but limited time. And, typically this is the best and most efficient approach.</p>
+</section>
+<section id="are-there-any-examples">
+<h3>Are there any examples?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#are-there-any-examples" title="Link to this heading">#</a></h3>
+<p>Yes! See <a class="reference internal" href="https://ashejim.github.io/D195/resources.html#resources-examples"><span class="std std-ref">D502 examples</span></a>.</p>
+</section>
+<section id="how-long-should-task-2-be-is-there-a-page-length-required">
+<h3>How long should task 2 be? Is there a page length required?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#how-long-should-task-2-be-is-there-a-page-length-required" title="Link to this heading">#</a></h3>
+<p>No. The individual evaluator determines what qualifies as “sufficient detail” and will vary depending on the project and writing style. If you feel you’ve met the requirements, simply move on to the next section. Upon submission, it will pass, or they will request more details.</p>
+</section>
+<section id="how-many-submission-attempts-do-i-have">
+<h3>How many submission attempts do I have?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#how-many-submission-attempts-do-i-have" title="Link to this heading">#</a></h3>
+<p>You have unlimited submissions (as with all WGU performance assessments). Furthermore, a project requiring multiple submissions is not precluded from being given an excellence award. However, do attempt to fully meet <em>each</em> requirement as submissions falling significantly short of the minimum requirements may be <em>locked</em> from further submissions without instructor approval. Moreover, such submissions do not receive meaningful evaluator comments.</p>
+</section>
+<section id="i-can-t-find-sources-for-section-a3-summary-of-published-works-what-can-i-do">
+<h3>I can’t find sources for section A3, <em>Summary of Published Works</em>. What can I do?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#i-can-t-find-sources-for-section-a3-summary-of-published-works-what-can-i-do" title="Link to this heading">#</a></h3>
+<p>You are likely over interpreting what’s required. Rarely are submissions sent back because cited works are unsuitable. You can use any referenceable work created by a professional which can be <em>related</em> to your project -it does not need to align with your project entirely. For example, an article about your chosen analytical method or tools would suffice.</p>
+</section>
+<section id="my-task-two-was-returned-for-sources-stating-citations-are-missing-but-i-properly-cited-everything">
+<h3>My task two was returned for <em>Sources</em> stating citations are missing, but I properly cited everything<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#my-task-two-was-returned-for-sources-stating-citations-are-missing-but-i-properly-cited-everything" title="Link to this heading">#</a></h3>
+<p>If the evaluator wrote something like:</p>
+<blockquote>
+<div><p>“In-text citations could not be found for portions of the task that have been quoted or paraphrased… “
+<strong>What does this comment mean?</strong></p>
+</div></blockquote>
+<p>This indicates they could not find a matching in-text citation for every source on your reference list. Check that each reference has a match following APA style, e.g., (Author, year), and remove any references without matches. Use the <a class="reference external" href="https://support.microsoft.com/en-us/office/create-a-bibliography-citations-and-references-17686589-4824-4940-9c69-342c289fa2a5">MS Word Reference Tool</a> to create, manage references, and avoid such errors. Follow the in-text citations and the reference page format of the <a class="reference internal" href="https://ashejim.github.io/D195/resources.html#resources-examples"><span class="std std-ref">tasks 2 and 3 examples</span></a>.</p>
+</section>
+<section id="how-complex-does-my-data-or-analytic-method-need-to-be">
+<h3>How complex does my data or analytic method need to be?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#how-complex-does-my-data-or-analytic-method-need-to-be" title="Link to this heading">#</a></h3>
+<p>It must be complex enough to meet the needs of your project. There is no explicit minimal complexity for either. However, the data must meet the needs of the research question and the method must be appropriate for both the data and the research question which may indirectly require a minimal complexity. For example, testing for correlation inherently requires two variables and parametric methods often need a minimal sample number to assume normality.</p>
+</section>
+<section id="are-there-any-restrictions-on-which-datasets-i-can-choose">
+<h3>Are there any restrictions on which datasets I can choose?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#are-there-any-restrictions-on-which-datasets-i-can-choose" title="Link to this heading">#</a></h3>
+<p>Only that data must be legally available to use and share with evaluators. For example, using data belonging to a current employer would require submitting a <a class="reference internal" href="https://ashejim.github.io/D195/task1.html#task1-waiverform"><span class="std std-ref">waiver form</span></a>.</p>
+<ul class="simple">
+<li><p>You <em>can</em> use any dataset found on <a class="reference external" href="https://www.kaggle.com/datasets">kaggle.com</a>.</p></li>
+<li><p>You <em>can</em> use simulated data.</p></li>
+<li><p>You <em>can</em> use data used for previous projects (submitted by you or others).</p></li>
+<li><p>You only need to apply for <a class="reference external" href="https://cm.wgu.edu/t5/Frequently-Asked-Questions/WGU-IRB-and-Human-Subject-Protections-FAQ/ta-p/2002">IRB review</a> if you are <em>collecting</em> data involving human participants (this is rarely needed). Otherwise, your project is in IRB compliance.</p></li>
+</ul>
+</section>
+</section>
+<section id="questions-comments-or-suggestions">
+<h2>Questions, comments, or suggestions?<a class="headerlink" href="https://ashejim.github.io/D195/task2.html#questions-comments-or-suggestions" title="Link to this heading">#</a></h2>
+<div class="utterances" style="height: 269px;">
+    <iframe class="utterances-frame" title="Comments" scrolling="no" src="./Task 2 — D195 Data Analytics Capstone_files/utterances.html" loading="lazy"></iframe>
+  </div>
+    <script>kernelName = 'python3'</script>
+
+                </section></section></article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev" href="https://ashejim.github.io/D195/task1.html" title="previous page">
+      <svg class="svg-inline--fa fa-angle-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg><!-- <i class="fa-solid fa-angle-left"></i> Font Awesome fontawesome.com -->
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Task 1</p>
+      </div>
+    </a>
+    <a class="right-next" href="https://ashejim.github.io/D195/task3.html" title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Task 3</p>
+      </div>
+      <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com -->
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc noprint"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <svg class="svg-inline--fa fa-list" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"></path></svg><!-- <i class="fa-solid fa-list"></i> Font Awesome fontawesome.com --> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#do-the-analysis-now">Do the Analysis Now!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#write-task-2">Write Task 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a-proposal-overview">A: Proposal Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a1-research-question-or-organizational-need">A1: Research Question or Organizational Need</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#research-question-or-organizational-need">Research Question OR Organizational Need?</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#what-is-a-research-question">What is a Research Question?</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a2-context-background">A2: Context &amp; Background</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a3-a3a-summary-of-works-project-relation">A3 &amp; A3A: Summary of Works &amp; Project Relation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a4-summary-of-data-analytics-solution">A4: Summary of Data Analytics Solution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#a5-benefits-support-of-decision-making-process">A5: Benefits &amp; Support of Decision-Making Process</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b-data-analytics-project-plan">B: Data Analytics Project Plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b1-goals-objectives-deliverables">B1: Goals, Objectives, &amp; Deliverables</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b2-scope-of-project">B2: Scope of Project</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b3-standard-methodology">B3: Standard Methodology</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b4-timeline-milestones">B4: Timeline &amp; Milestones</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b5-resources-costs">B5: Resources &amp; Costs</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#b6-criteria-for-success">B6: Criteria for Success</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c-design-of-data-analytics-solution">C: Design of Data Analytics Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c1-hypothesis">C1: Hypothesis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c2-c2a-analytical-method">C2 &amp; C2A: Analytical Method</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c3-tools-environment">C3: Tools &amp; Environment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c4-c4a-methods-metrics-to-evaluate-statistical-significance">C4 &amp; C4A: Methods &amp; Metrics to Evaluate Statistical Significance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c5-practical-significance">C5: Practical Significance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#c6-visual-communication">C6: Visual Communication</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d-description-of-dataset">D: Description of Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d1-source-of-data">D1: Source of Data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d2-appropriateness-of-dataset">D2: Appropriateness of Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d3-data-collection-methods">D3: Data Collection Methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d4-observations-on-quality-completeness-of-data">D4: Observations on Quality &amp; Completeness of Data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#d5-d5a-data-governance-privacy-security-ethical-legal-regulatory-compliances">D5 &amp; D5A: Data Governance, Privacy, Security, Ethical, Legal, &amp; Regulatory Compliances</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#grammar-sources-and-apa">Grammar, Sources, and APA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry active"><a class="reference internal nav-link active" href="https://ashejim.github.io/D195/task2.html#faq">FAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#i-ve-completed-task-2-should-i-send-it-to-my-course-instructor-for-review">I’ve completed task 2. Should I send it to my course instructor for review?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#are-there-any-examples">Are there any examples?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#how-long-should-task-2-be-is-there-a-page-length-required">How long should task 2 be? Is there a page length required?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#how-many-submission-attempts-do-i-have">How many submission attempts do I have?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#i-can-t-find-sources-for-section-a3-summary-of-published-works-what-can-i-do">I can’t find sources for section A3, <em>Summary of Published Works</em>. What can I do?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#my-task-two-was-returned-for-sources-stating-citations-are-missing-but-i-properly-cited-everything">My task two was returned for <em>Sources</em> stating citations are missing, but I properly cited everything</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#how-complex-does-my-data-or-analytic-method-need-to-be">How complex does my data or analytic method need to be?</a></li>
+<li class="toc-h3 nav-item toc-entry active"><a class="reference internal nav-link active" href="https://ashejim.github.io/D195/task2.html#are-there-any-restrictions-on-which-datasets-i-can-choose">Are there any restrictions on which datasets I can choose?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="https://ashejim.github.io/D195/task2.html#questions-comments-or-suggestions">Questions, comments, or suggestions?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content noprint">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Jim Ashe
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="./Task 2 — D195 Data Analytics Capstone_files/bootstrap.js.download"></script>
+<script src="./Task 2 — D195 Data Analytics Capstone_files/pydata-sphinx-theme.js.download"></script>
+
+  <footer class="bd-footer noprint">
+  </footer>
+  
+</body></html>
