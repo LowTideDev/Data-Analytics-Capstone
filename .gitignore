@@ -1,2 +1,18 @@
-# Ignore merged output files
+# Ignore combined dataset outputs
+# (only chunked parts are versioned)
+games.csv
+games.json
+
+# Local analysis directories
 output/
+.venv/
+
+# Editor and OS temporary files
+*~
+~$*.docx
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
