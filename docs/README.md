@@ -14,5 +14,6 @@ The dataset is divided into multiple parts to keep file sizes manageable (approx
 2. **Clean the data** – parse numerical fields, convert dates, and normalize text.
 3. **Explore and analyze** – perform any statistical or machine‑learning tasks required by your project.
 
-See `docs/environment_setup.md` for a sample script.
+See `docs/setup_instructions.md` for setup guidance.
+
 
