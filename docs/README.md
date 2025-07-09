@@ -11,10 +11,10 @@ The dataset is divided into multiple parts to keep file sizes manageable (approx
 
 ## Usage Overview
 1. **Combine the dataset** – merge the CSV parts into `games.csv` and the JSON
-   parts into `games.json`. Store these merged files locally in a folder listed
-   in `.gitignore` (such as `output/`) and do not commit them to GitHub due to
-   their size. You may also merge the parts directly into a `pandas` DataFrame
-   without writing to disk.
+   parts into `games.json`. Produce these merged files locally but **do not
+   commit** them to GitHub due to size restrictions. Keep them in a folder
+   listed in `.gitignore` (such as `output/`). You may also merge the parts
+   directly into a `pandas` DataFrame without writing to disk.
 2. **Clean the data** – parse numerical fields, convert dates, and normalize text.
 3. **Explore and analyze** – perform any statistical or machine‑learning tasks required by your project.
 
