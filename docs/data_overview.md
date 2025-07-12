@@ -42,4 +42,4 @@ The CSV files share the following columns:
 38. `Screenshots`
 39. `Movies`
 
-The JSON files contain similar information but keyed by `AppID`. After merging, you will have a comprehensive dataset that can be analyzed using your preferred tools.
+The JSON files contain similar information but keyed by `AppID`. After combining them in memory, you will have a comprehensive dataset that can be analyzed using your preferred tools without creating a giant file in the repo.
