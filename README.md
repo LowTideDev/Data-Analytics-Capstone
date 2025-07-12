@@ -4,6 +4,7 @@ This repository stores a Steam games dataset split into multiple files along wit
 
 See `USAGE.md` for instructions on setting up a virtual environment, installing dependencies from `requirements.txt`, and launching the notebook.
 The data is provided in 5 CSV chunks (`games_part_*.csv`) and 23 JSON pieces (`games_json_part_*.json`). Merge these pieces only within your analysis environment (for example, using pandas) so that no large combined file needs to be committed to the repo.
+The raw data originates from the public Kaggle dataset "Steam Store Games" (https://www.kaggle.com/datasets/nikdavis/steam-store-games) released under the CC0 1.0 license. It is provided here solely for educational use.
 
 ## Project Completion Plan
 
