@@ -2,6 +2,7 @@
 # (only chunked parts are versioned)
 games.csv
 games.json
+games_clean.csv  # local cache created by notebooks; do not version
 
 # Local analysis directories
 output/

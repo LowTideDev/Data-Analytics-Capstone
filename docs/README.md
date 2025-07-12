@@ -9,7 +9,7 @@ The dataset is divided into multiple parts to keep file sizes manageable (approx
 - `games_json_part_*.json` – 23 JSON chunks containing similar information keyed by app ID.
 - `.docx` and `.html` files – capstone references and forms from WGU.
 
-1. **Combine the dataset** – merge the CSV parts into `games.csv` and the JSON parts into `games.json`.
+1. **Load the dataset in memory** – read the CSV and JSON parts and combine them using pandas within your environment. Avoid persisting the merged result to the repository.
 2. **Clean the data** – parse numerical fields, convert dates, and normalize text.
 3. **Explore and analyze** – perform any statistical or machine‑learning tasks required by your project.
 
