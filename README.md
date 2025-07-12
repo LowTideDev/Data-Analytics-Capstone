@@ -2,6 +2,7 @@
 
 This repository stores a Steam games dataset split into multiple files along with reference documents from WGU.
 
+See `USAGE.md` for instructions on setting up a virtual environment, installing dependencies from `requirements.txt`, and launching the notebook.
 The data is provided in 5 CSV chunks (`games_part_*.csv`) and 23 JSON pieces (`games_json_part_*.json`). Merge these pieces only within your analysis environment (for example, using pandas) so that no large combined file needs to be committed to the repo.
 
 ## Project Completion Plan
