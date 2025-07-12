@@ -2,11 +2,11 @@
 
 This repository stores a Steam games dataset split into multiple files along with reference documents from WGU.
 
-The data is provided in 5 CSV chunks (`games_part_*.csv`) and 23 JSON pieces (`games_json_part_*.json`). You will need to combine these parts before analysis.
+The data is provided in 5 CSV chunks (`games_part_*.csv`) and 23 JSON pieces (`games_json_part_*.json`). Merge these pieces only within your analysis environment (for example, using pandas) so that no large combined file needs to be committed to the repo.
 
 ## Project Completion Plan
 
-1. **Merge the datasets** – concatenate the CSV files into `games.csv` and merge the JSON pieces into `games.json`.
+1. **Load the datasets in memory** – use pandas to concatenate the CSV parts and combine the JSON pieces inside your analysis environment. Avoid writing a single large file back into the repository.
 2. **Clean and transform** – parse dates, convert numerical fields, and handle missing values.
 3. **Explore** – generate summary statistics and visualizations to understand distributions and correlations.
 4. **Model** – build predictive or clustering models depending on your goals.
@@ -26,17 +26,16 @@ import pandas as pd, glob, json
 
 csv_files = sorted(glob.glob('games_part_*.csv'))
 df = pd.concat((pd.read_csv(f) for f in csv_files), ignore_index=True)
-df.to_csv('games.csv', index=False)
+# work with `df` directly; avoid writing a large combined CSV to disk
 
 json_files = sorted(glob.glob('games_json_part_*.json'))
 merged = {}
 for fp in json_files:
     with open(fp) as f:
         merged.update(json.load(f))
-with open('games.json', 'w') as f:
-    json.dump(merged, f)
+# `merged` now holds all JSON records in memory
 PY
 jupyter lab
 ```
 
-This script installs common data-analysis packages, merges the dataset chunks, and launches Jupyter Lab for exploration. Adjust the steps as needed for your environment.
+This script installs common data-analysis packages, loads the dataset chunks into memory, and launches Jupyter Lab for exploration. Adjust the steps as needed for your environment.

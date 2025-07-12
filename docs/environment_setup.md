@@ -1,6 +1,6 @@
 # Environment Setup
 
-This repository has no code or requirements yet. Below is a sample setup script to create a Python virtual environment, install common data‑analysis packages, and merge the dataset pieces.
+This repository has no code or requirements yet. Below is a sample setup script to create a Python virtual environment, install common data‑analysis packages, and load the dataset pieces without generating large files.
 
 ```bash
 #!/bin/bash
@@ -15,16 +15,14 @@ import pandas as pd, glob, json
 csv_files = sorted(glob.glob('games_part_*.csv'))
 if csv_files:
     df = pd.concat((pd.read_csv(f) for f in csv_files), ignore_index=True)
-    df.to_csv('games.csv', index=False)
+    # `df` now holds the combined records in memory
 
 json_files = sorted(glob.glob('games_json_part_*.json'))
 merged = {}
 for fp in json_files:
     with open(fp) as f:
         merged.update(json.load(f))
-if merged:
-    with open('games.json', 'w') as f:
-        json.dump(merged, f)
+# `merged` contains all JSON records in memory
 PY
 
 jupyter lab
