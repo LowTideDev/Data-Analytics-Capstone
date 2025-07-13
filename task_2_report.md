@@ -16,7 +16,6 @@ This project will perform regression and clustering analyses on the Steam datase
 
 ### A5. Expected Outcomes
 The study will result in a cleaned dataset, descriptive statistics, predictive models, and a concise set of recommendations on genre focus, pricing strategy, and optimal release windows. These deliverables will help indie studios make more informed decisions when launching new titles.
-
 ---
 
 ## B. Project Justification (Management Perspective)
