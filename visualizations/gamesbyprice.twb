@@ -1,0 +1,1621 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='games_clean' inline='true' name='federated.0hvaqhd0dgdv6q1dq99by06ghhbq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='games_clean' name='textscan.0yavvs318xmzbh1cfu3fd1n5i1ri'>
+            <connection class='textscan' directory='C:/Users/jonze/Desktop/Data Analytics Capstone' filename='games_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0yavvs318xmzbh1cfu3fd1n5i1ri' name='games_clean.csv' table='[games_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='date' name='release_date' ordinal='1' />
+            <column datatype='string' name='estimated_owners' ordinal='2' />
+            <column datatype='integer' name='peak_ccu' ordinal='3' />
+            <column datatype='integer' name='required_age' ordinal='4' />
+            <column datatype='real' name='price' ordinal='5' />
+            <column datatype='integer' name='discountdlc_count' ordinal='6' />
+            <column datatype='integer' name='about_the_game' ordinal='7' />
+            <column datatype='string' name='supported_languages' ordinal='8' />
+            <column datatype='string' name='full_audio_languages' ordinal='9' />
+            <column datatype='string' name='reviews' ordinal='10' />
+            <column datatype='string' name='header_image' ordinal='11' />
+            <column datatype='string' name='website' ordinal='12' />
+            <column datatype='string' name='support_url' ordinal='13' />
+            <column datatype='string' name='support_email' ordinal='14' />
+            <column datatype='string' name='windows' ordinal='15' />
+            <column datatype='boolean' name='mac' ordinal='16' />
+            <column datatype='boolean' name='linux' ordinal='17' />
+            <column datatype='boolean' name='metacritic_score' ordinal='18' />
+            <column datatype='integer' name='metacritic_url' ordinal='19' />
+            <column datatype='string' name='user_score' ordinal='20' />
+            <column datatype='integer' name='positive' ordinal='21' />
+            <column datatype='integer' name='negative' ordinal='22' />
+            <column datatype='integer' name='score_rank' ordinal='23' />
+            <column datatype='real' name='achievements' ordinal='24' />
+            <column datatype='integer' name='recommendations' ordinal='25' />
+            <column datatype='integer' name='notes' ordinal='26' />
+            <column datatype='string' name='average_playtime_forever' ordinal='27' />
+            <column datatype='integer' name='average_playtime_two_weeks' ordinal='28' />
+            <column datatype='integer' name='median_playtime_forever' ordinal='29' />
+            <column datatype='integer' name='median_playtime_two_weeks' ordinal='30' />
+            <column datatype='integer' name='developers' ordinal='31' />
+            <column datatype='string' name='publishers' ordinal='32' />
+            <column datatype='string' name='categories' ordinal='33' />
+            <column datatype='string' name='genres' ordinal='34' />
+            <column datatype='string' name='tags' ordinal='35' />
+            <column datatype='string' name='screenshots' ordinal='36' />
+            <column datatype='string' name='movies' ordinal='37' />
+            <column datatype='integer' name='estimated_owners_mid' ordinal='38' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_owners</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[estimated_owners]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>estimated_owners</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>peak_ccu</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[peak_ccu]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>peak_ccu</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>required_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[required_age]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>required_age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discountdlc_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[discountdlc_count]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>discountdlc_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>about_the_game</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[about_the_game]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>about_the_game</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>supported_languages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[supported_languages]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>supported_languages</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_audio_languages</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[full_audio_languages]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>full_audio_languages</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>reviews</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>header_image</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[header_image]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>header_image</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>website</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[website]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>website</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>support_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[support_url]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>support_url</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>support_email</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[support_email]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>support_email</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>windows</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[windows]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>windows</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mac</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[mac]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>mac</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linux</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[linux]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>linux</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>metacritic_score</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[metacritic_score]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>metacritic_score</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>metacritic_url</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[metacritic_url]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>metacritic_url</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_score]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>user_score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[positive]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>positive</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[negative]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>negative</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[score_rank]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>score_rank</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>achievements</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[achievements]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>achievements</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recommendations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recommendations]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>recommendations</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>notes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[notes]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>notes</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_playtime_forever</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[average_playtime_forever]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>average_playtime_forever</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_playtime_two_weeks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_playtime_two_weeks]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>average_playtime_two_weeks</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>median_playtime_forever</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[median_playtime_forever]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>median_playtime_forever</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>median_playtime_two_weeks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[median_playtime_two_weeks]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>median_playtime_two_weeks</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>developers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[developers]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>developers</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publishers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publishers]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>publishers</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categories]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>categories</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>screenshots</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[screenshots]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>screenshots</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[movies]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>movies</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_owners_mid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[estimated_owners_mid]</local-name>
+            <parent-name>[games_clean.csv]</parent-name>
+            <remote-alias>estimated_owners_mid</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Price Bucket' datatype='string' name='[Calculation_325103630660714496]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [price] &lt; 5 THEN &quot;&lt;$5&quot;&#13;&#10;ELSEIF [price] &lt; 10 THEN &quot;$5–9.99&quot;&#13;&#10;ELSEIF [price] &lt; 20 THEN &quot;$10–19.99&quot;&#13;&#10;ELSEIF [price] &lt; 30 THEN &quot;$20–29.99&quot;&#13;&#10;ELSEIF [price] &lt; 40 THEN &quot;$30–39.99&quot;&#13;&#10;ELSEIF [price] &lt; 50 THEN &quot;$40–49.99&quot;&#13;&#10;ELSEIF [price] &lt; 75 THEN &quot;$50–74.99&quot;&#13;&#10;ELSE &quot;75+&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Price (bin)' datatype='integer' name='[Price (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[price]' peg='0' size='5' />
+      </column>
+      <column caption='games_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[games_clean.csv_89B383A722C34374A53305583B2A5A6C]' role='measure' type='quantitative' />
+      <column caption='About The Game' datatype='integer' name='[about_the_game]' role='measure' type='quantitative' />
+      <column caption='Achievements' datatype='real' name='[achievements]' role='measure' type='quantitative' />
+      <column caption='Average Playtime Forever' datatype='string' name='[average_playtime_forever]' role='dimension' type='nominal' />
+      <column caption='Average Playtime Two Weeks' datatype='integer' name='[average_playtime_two_weeks]' role='measure' type='quantitative' />
+      <column caption='Categories' datatype='string' name='[categories]' role='dimension' type='nominal' />
+      <column caption='Developers' datatype='integer' name='[developers]' role='measure' type='quantitative' />
+      <column caption='Discountdlc Count' datatype='integer' name='[discountdlc_count]' role='measure' type='quantitative' />
+      <column caption='Estimated Owners' datatype='integer' datatype-customized='true' name='[estimated_owners]' role='dimension' type='ordinal' />
+      <column caption='Estimated Owners Mid' datatype='integer' name='[estimated_owners_mid]' role='measure' type='quantitative' />
+      <column caption='Full Audio Languages' datatype='string' name='[full_audio_languages]' role='dimension' type='nominal' />
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+      <column caption='Header Image' datatype='string' name='[header_image]' role='dimension' type='nominal' />
+      <column caption='Linux' datatype='boolean' name='[linux]' role='dimension' type='nominal' />
+      <column caption='Mac' datatype='boolean' name='[mac]' role='dimension' type='nominal' />
+      <column caption='Median Playtime Forever' datatype='integer' name='[median_playtime_forever]' role='measure' type='quantitative' />
+      <column caption='Median Playtime Two Weeks' datatype='integer' name='[median_playtime_two_weeks]' role='measure' type='quantitative' />
+      <column caption='Metacritic Score' datatype='boolean' name='[metacritic_score]' role='dimension' type='nominal' />
+      <column caption='Metacritic Url' datatype='integer' name='[metacritic_url]' role='measure' type='quantitative' />
+      <column caption='Movies' datatype='string' name='[movies]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Negative' datatype='integer' name='[negative]' role='measure' type='quantitative' />
+      <column caption='Notes' datatype='integer' name='[notes]' role='measure' type='quantitative' />
+      <column caption='Peak Ccu' datatype='integer' name='[peak_ccu]' role='measure' type='quantitative' />
+      <column caption='Positive' datatype='integer' name='[positive]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Publishers' datatype='string' name='[publishers]' role='dimension' type='nominal' />
+      <column caption='Recommendations' datatype='integer' name='[recommendations]' role='measure' type='quantitative' />
+      <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+      <column caption='Required Age' datatype='integer' name='[required_age]' role='measure' type='quantitative' />
+      <column caption='Reviews' datatype='string' name='[reviews]' role='dimension' type='nominal' />
+      <column caption='Score Rank' datatype='integer' name='[score_rank]' role='measure' type='quantitative' />
+      <column caption='Screenshots' datatype='string' name='[screenshots]' role='dimension' type='nominal' />
+      <column caption='Support Email' datatype='string' name='[support_email]' role='dimension' type='nominal' />
+      <column caption='Support Url' datatype='string' name='[support_url]' role='dimension' type='nominal' />
+      <column caption='Supported Languages' datatype='string' name='[supported_languages]' role='dimension' type='nominal' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='User Score' datatype='string' name='[user_score]' role='dimension' type='nominal' />
+      <column caption='Website' datatype='string' name='[website]' role='dimension' type='nominal' />
+      <column caption='Windows' datatype='string' name='[windows]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/jonze/AppData/Local/Temp/TableauTemp/#TableauTemp_0fhg4mt1aom23c1785rgq1k90jkx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/17/2025 02:12:11 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>111321</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[release_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>9977</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>estimated_owners</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[estimated_owners]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>estimated_owners</remote-alias>
+              <ordinal>2</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>peak_ccu</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[peak_ccu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>peak_ccu</remote-alias>
+              <ordinal>3</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1174</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>required_age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[required_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>required_age</remote-alias>
+              <ordinal>4</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>5</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>410</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>discountdlc_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[discountdlc_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>discountdlc_count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>about_the_game</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[about_the_game]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>about_the_game</remote-alias>
+              <ordinal>7</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>supported_languages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[supported_languages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>supported_languages</remote-alias>
+              <ordinal>8</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>102792</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>full_audio_languages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[full_audio_languages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>full_audio_languages</remote-alias>
+              <ordinal>9</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4817</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reviews</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reviews</remote-alias>
+              <ordinal>10</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>883</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>header_image</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[header_image]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>header_image</remote-alias>
+              <ordinal>11</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15966</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>website</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[website]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>website</remote-alias>
+              <ordinal>12</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>111321</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>support_url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[support_url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>support_url</remote-alias>
+              <ordinal>13</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19866</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>support_email</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[support_email]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>support_email</remote-alias>
+              <ordinal>14</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20203</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>windows</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[windows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>windows</remote-alias>
+              <ordinal>15</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25153</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mac</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[mac]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mac</remote-alias>
+              <ordinal>16</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>linux</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[linux]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>linux</remote-alias>
+              <ordinal>17</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>metacritic_score</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[metacritic_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>metacritic_score</remote-alias>
+              <ordinal>18</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>metacritic_url</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[metacritic_url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>metacritic_url</remote-alias>
+              <ordinal>19</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>166</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_score</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[user_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_score</remote-alias>
+              <ordinal>20</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6807</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>positive</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[positive]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>positive</remote-alias>
+              <ordinal>21</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>negative</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[negative]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>negative</remote-alias>
+              <ordinal>22</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2073</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>score_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[score_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>score_rank</remote-alias>
+              <ordinal>23</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1203</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>achievements</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[achievements]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>achievements</remote-alias>
+              <ordinal>24</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recommendations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[recommendations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recommendations</remote-alias>
+              <ordinal>25</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>329</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>notes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[notes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>notes</remote-alias>
+              <ordinal>26</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5605</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_playtime_forever</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[average_playtime_forever]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_playtime_forever</remote-alias>
+              <ordinal>27</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13106</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_playtime_two_weeks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[average_playtime_two_weeks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_playtime_two_weeks</remote-alias>
+              <ordinal>28</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4320</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>median_playtime_forever</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[median_playtime_forever]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>median_playtime_forever</remote-alias>
+              <ordinal>29</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2422</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>median_playtime_two_weeks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[median_playtime_two_weeks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>median_playtime_two_weeks</remote-alias>
+              <ordinal>30</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4010</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>developers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[developers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>developers</remote-alias>
+              <ordinal>31</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2422</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publishers</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[publishers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publishers</remote-alias>
+              <ordinal>32</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36789</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categories</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[categories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>categories</remote-alias>
+              <ordinal>33</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23799</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres</remote-alias>
+              <ordinal>34</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3168</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tags</remote-alias>
+              <ordinal>35</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2066</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>screenshots</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[screenshots]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>screenshots</remote-alias>
+              <ordinal>36</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39054</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[movies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movies</remote-alias>
+              <ordinal>37</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>103394</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>estimated_owners_mid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[estimated_owners_mid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>estimated_owners_mid</remote-alias>
+              <ordinal>38</ordinal>
+              <family>games_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[games_clean.csv_89B383A722C34374A53305583B2A5A6C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='games_clean.csv' id='games_clean.csv_89B383A722C34374A53305583B2A5A6C'>
+            <properties context=''>
+              <relation connection='textscan.0yavvs318xmzbh1cfu3fd1n5i1ri' name='games_clean.csv' table='[games_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='date' name='release_date' ordinal='1' />
+                  <column datatype='string' name='estimated_owners' ordinal='2' />
+                  <column datatype='integer' name='peak_ccu' ordinal='3' />
+                  <column datatype='integer' name='required_age' ordinal='4' />
+                  <column datatype='real' name='price' ordinal='5' />
+                  <column datatype='integer' name='discountdlc_count' ordinal='6' />
+                  <column datatype='integer' name='about_the_game' ordinal='7' />
+                  <column datatype='string' name='supported_languages' ordinal='8' />
+                  <column datatype='string' name='full_audio_languages' ordinal='9' />
+                  <column datatype='string' name='reviews' ordinal='10' />
+                  <column datatype='string' name='header_image' ordinal='11' />
+                  <column datatype='string' name='website' ordinal='12' />
+                  <column datatype='string' name='support_url' ordinal='13' />
+                  <column datatype='string' name='support_email' ordinal='14' />
+                  <column datatype='string' name='windows' ordinal='15' />
+                  <column datatype='boolean' name='mac' ordinal='16' />
+                  <column datatype='boolean' name='linux' ordinal='17' />
+                  <column datatype='boolean' name='metacritic_score' ordinal='18' />
+                  <column datatype='integer' name='metacritic_url' ordinal='19' />
+                  <column datatype='string' name='user_score' ordinal='20' />
+                  <column datatype='integer' name='positive' ordinal='21' />
+                  <column datatype='integer' name='negative' ordinal='22' />
+                  <column datatype='integer' name='score_rank' ordinal='23' />
+                  <column datatype='real' name='achievements' ordinal='24' />
+                  <column datatype='integer' name='recommendations' ordinal='25' />
+                  <column datatype='integer' name='notes' ordinal='26' />
+                  <column datatype='string' name='average_playtime_forever' ordinal='27' />
+                  <column datatype='integer' name='average_playtime_two_weeks' ordinal='28' />
+                  <column datatype='integer' name='median_playtime_forever' ordinal='29' />
+                  <column datatype='integer' name='median_playtime_two_weeks' ordinal='30' />
+                  <column datatype='integer' name='developers' ordinal='31' />
+                  <column datatype='string' name='publishers' ordinal='32' />
+                  <column datatype='string' name='categories' ordinal='33' />
+                  <column datatype='string' name='genres' ordinal='34' />
+                  <column datatype='string' name='tags' ordinal='35' />
+                  <column datatype='string' name='screenshots' ordinal='36' />
+                  <column datatype='string' name='movies' ordinal='37' />
+                  <column datatype='integer' name='estimated_owners_mid' ordinal='38' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='games_clean' name='federated.0hvaqhd0dgdv6q1dq99by06ghhbq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hvaqhd0dgdv6q1dq99by06ghhbq'>
+            <column caption='Estimated Owners Mid' datatype='integer' name='[estimated_owners_mid]' role='measure' type='quantitative' />
+            <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+            <column-instance column='[estimated_owners_mid]' derivation='Sum' name='[sum:estimated_owners_mid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[release_date]' derivation='Year' name='[yr:release_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[sum:estimated_owners_mid:qk]</rows>
+        <cols>[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[yr:release_date:ok]</cols>
+      </table>
+      <simple-id uuid='{EE7C9C58-B166-4EE7-A5C9-8745924F67A9}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Steam Game Prices </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='games_clean' name='federated.0hvaqhd0dgdv6q1dq99by06ghhbq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hvaqhd0dgdv6q1dq99by06ghhbq'>
+            <column caption='Price Bucket' datatype='string' name='[Calculation_325103630660714496]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [price] &lt; 5 THEN &quot;&lt;$5&quot;&#13;&#10;ELSEIF [price] &lt; 10 THEN &quot;$5–9.99&quot;&#13;&#10;ELSEIF [price] &lt; 20 THEN &quot;$10–19.99&quot;&#13;&#10;ELSEIF [price] &lt; 30 THEN &quot;$20–29.99&quot;&#13;&#10;ELSEIF [price] &lt; 40 THEN &quot;$30–39.99&quot;&#13;&#10;ELSEIF [price] &lt; 50 THEN &quot;$40–49.99&quot;&#13;&#10;ELSEIF [price] &lt; 75 THEN &quot;$50–74.99&quot;&#13;&#10;ELSE &quot;75+&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_325103630660714496]' derivation='None' name='[none:Calculation_325103630660714496:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[sum:price:qk]' scope='rows' value='# of Games Released' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[sum:price:qk]</rows>
+        <cols>[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[none:Calculation_325103630660714496:nk]</cols>
+        <show-full-range>
+          <column>[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[Price (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{790057D4-9CB8-4E0D-BFA8-8D3A48B99456}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1BA940B3-EF71-4465-AB01-1AFDDEFF2E6B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[none:Calculation_325103630660714496:nk]</field>
+            <field>[federated.0hvaqhd0dgdv6q1dq99by06ghhbq].[none:Price (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F653DAA3-8A0D-48CA-A27E-BD51C4674A6F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAANz0lEQVR4nO3dyW+b+X3H8ffDXftKSbRkydolL5l9iT2dYJYABnIoeguKAj312nP/gd7b
+      f6CXngokBQq0aNECQTOdmWRmYnjGy8ibNmq1JVEixf3ZevBYM0ZCAnloKTR/n9dNtCg9Bvjm
+      s/D56mf5vu8jYiDLsqzQn3ojRP6UIqf5w33fx/O80/wVIg051QAALMvC8zwsy8KyrNP+dSJ/
+      lEABlHIZlh6uMjF7ETe3w+6xx9x4kqX7q8wszuOUXcJegWjPEG2REJ7nEQqFFIA0HSvISXAx
+      n8f3Kmzu5cgfZphfvMje5ir950bY2jmAso0XjXFpcQYLcByHcDisAKSpBD4JDnkVtvYLTE2k
+      KBcK3L75DceORzyRwPJcsocHEDr1oyuRhgV6le7ubHOYLRFv6yA13Md+EcaHB/j6d98wdfEi
+      /X3DhNwc+YpLVzz8ordZ5IUJdAj0x9IhkDQjfQ4gxlMAYjQFIEZTAGI0BSBG08X6M+L7Pv97
+      cy3w81MDXSxMDL64DRJAAZwZz/f5h198Efj5H78xpQBOgQ6BxGgKQIymAMRoCkCMFugkOLOT
+      5mF6i6GxWcZ64bObaV6ZTfLtw3UmFhah7OFVD0mOz9IW0f0/0rwCBdA3MsaUD9VIiJX0YwZ6
+      4hxmC7z54zdZfbjKk40thmYukgg/vRHO8zxMn713vcb+/57vYdv2C9oaeSbgHmADJ9HHSLvL
+      J3f3ODo8YmbuAvlsFi8cIzU+RfH4CJ8UkUhEd4MCoQZno0NWiGg0+oK2Rp4JFIDne2wu38c+
+      P80HH7xP9ihLZ0eMpfurzC7MYpcdolaFYtWjU/MA0sQCBZAcnSQ5OnnydU9vDwCXL18EIN4Z
+      BdqIN759IqdKV4HEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDE
+      aApAjBZ8JHJ9k57hC3jZTR7nPeZG+1jd3GVkcpZQ1ccpZTg/f1kjkdLUgo1EDp8jVa7S3t9N
+      ++As4d1DKrbN29d+zOqDZbbW0gwvvKKRyB/QSGRzChTA5sNvydJBJx63b91hZHwGKmWW7z/A
+      SnQxOr1I9XifijtEQiORgEYim1WgAAbOTRDJFwmHI0zNzOD4EZKpWY6OsvT29+E5HmFrCPdF
+      b63ICxYogPauHtq7no5B0tl+8vjg4Hd/uzIWBqJoGliana4CidEUgBhNAYjRFIAYTQGI0RSA
+      GE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEUgBitoVUik6PTFB6vUKCd2XM93FveYHx+Aavs
+      4VaPGJrQKpHS3AKvEjnp+dgRB7dnlC6rzOOD/PerRKY3GZq9pJHIH9BIZHMKFMDB1jrVeB8j
+      fQmWnqxgWw6RUIhsJvN0lciJaUpaJfI5GolsToECIBziycYK+JOkBjsoWl2MDbRx/1Ga6dkp
+      7LJDzKpSqnp0aJVIaWKBAhhMTTCYmvjuq76TxxcX54HvV4mMNbp1IqdMV4HEaApAjKYAxGgK
+      QIymAMRoCkCMpgDEaME+CDPA3/7jf7J9cBzoufPnB/j7v/noBW+RnAYFUIPteNhOsNsXgj5P
+      zp4OgcRoCkCMpgDEaApAjKYAxGiBrgLl9ne4tbzDtbeu8MVnn1IOtTOT6mF16zEjF2ZOVokc
+      X7iikUhpaoEC6B5MkcoVgRCRSJiwFaZiW7zz3tNVIrdXX/5VIn2Cb6/v+783vqiRyOYUKIBC
+      9oCdnR26ejrxaCOGh4/Dg7tLRDv7nq4Smd+j4gyRiL6cI5EWwbfVsqzfG1/USGRzChRAOBpn
+      bnaORKKLS5dnsf0oPR1xDrPH9PT24LkeIYbxQi/PC17MFCiARHsnifbO775qO3m8v//peGQ4
+      FAIiWiVSmp6uAonRFIAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEUgBhNAYjR
+      AgXgeQ5H2RwA5UKO3b0Mnmuzu/sYx3WpVGzsSgnbfbmGYMQ8gQIoHGVYXt/A91yWlu7h+x5b
+      a4/I5g54lN5kI73Ng4crNDBTInImAs0DdPUP0Xt0jO9XyGayFO01Bns7mZyfYvXBClvraYbm
+      rhCxNBL5jEYim1PAdYLXuXfvHlask4HBLo4KDomExZeff0Fqcpbx2R68SoZ8dZiuuEYiQSOR
+      zSpQAP2pCX72bJG8seGTxycm53/wXeca2S6RM6GrQGI0BSBGUwBiNAUgRqt5ElzMHfL44AiA
+      WFsX50YGdVlfWk7NPYBrV7jzya9ZPcrx+ae/RWueSCuqGUDXwAgfXH+PJw8f0T00omMlaUn1
+      X9e+T6htkJGeWAOfi4o0r7oB7Kd3SKcfcO/RpgKQllT3k+ChmXk+IkIxntQhkLSkuq/rjVu3
+      +OzRJofry7hntUUiZ6juHmDq7Td559t12js79JeepSXV3QOkv7nJpzdusby8pnMAaUl19wB9
+      58Z4zbbIVxNntT0iZ6ruHiAS9dnJwOhA23OPu3aZ9Y0tAHzfYW1tA7da5PbtO5TsKsfHRUq5
+      DCVH+w1pbnX3AIdbT0iv3wNngh+99urJ46ViiXypCPhsrzxk86CKV80xOjbE6lqaqBei7Nhc
+      vtR/2tsv0pCaAeylH3B3L8dob4LB1Ohz9wF19vSROMjgVXLcebSN5ziUOs4z2t2N9fiAnY0t
+      BibnwfdxXFcjkWgkslnVDKBvZIL3uvtZ3zqgv7/3uQAyO+usrqxiRTt477132VjfIDnQwY3f
+      3uDCwiLdXUksJ0u+6mkk8jsaiWxONQOIxOLs3fiM36yXmeyNMpz66ck396cm+PjZSCSwcHEB
+      gKvD53/wEwZPY3tFXqi6J8Hn5uZor+4T7UvpcwBpSTX3AJmNb/nvz+8yPDZGKZfFA0UgLafm
+      HmDtzipzb77Byu1bzCzM6l4gaUk1X9fTb7yKmzng9avXqBaL+iRYWlLNQ6CeoVEWQyEy+RK7
+      x7bGIaUl1T2y2b57h19+8iUH6VXdDSotqe4nwWMXpxnOhOhPduscQFpS3QB2Hq6TOdqjLVTV
+      OYC0pLoBXHjjTV6pfEly8pL2ANKS6gawfvMrdksukYMD/AsjTXsi/NW9LXYzhUDPjYZDXH9n
+      5gVvkbws6gYQi0HF9pv+Hp7/+WqFL5a2Aj23PRFVAAarG0C1XMG2HapV56y2R+RM1T20H5yc
+      IVwqUC6Xzmp7RM5U3QB2H6ZxEzGymQNdBZKWVPMQyPc9pt69SufuLpVw53Ol5PZ3uLv+hHdf
+      v8LSN79jr2gxP9bHo/QOo9NzWBUPt3LIuelF2iLNff4gZqsZwNqN3xCZn+FX//5/tKWGGP+L
+      6yd3g3YPphjKFQGL6blFQpuPKZRc3r76NqsPVthd32B47gqJ8Nkskuc18rP/wPQWaCLMFLUH
+      YqI+S3d3ufbh63x9f/u5S6DVUpFcLkehWOLh0j3GpmYpHmyznd7AiyUYnZyjnM/geCNEI6c/
+      ERZq5Of+gekt0ESYKWoGMPajq9j377Kft7l+/cPnDoGq5QJdnV0UyhUG+vvIHmUZn5hmd/cJ
+      M+dTOFWPiGXjej7RsA6BpHnVDGBz6T5lN8z8axdpw8Ln+3WvO/uSzPQln34x0HfynPHxpyOR
+      0TaAGHq/kmZXeyh+qIP/+udfkniwRGp4kg/fe71pPwkWCarmZdDOwXF+/vOfEXUhFA7rxS8t
+      qf76AOsbDM8ukN3d1hJJ0pLqBnDhrT9jojPKTz7+iQbipSXVPAdwXZvHuxmGB5JEOtpqfZvI
+      S61mAPnMDv/2r/9BtwXjH13n2uKkZgKk5dR8TYfCURLxGFYI/AY/xRRpVjX3AF39I/zlX/8V
+      vm0Tbu/Qu7+0pDrzABbxeBzi8bPbGpEzpjd2MZoCEKMpADGaAhCjBQrA9z3KlQrgU62UKFWq
+      +J5LPl/A8zwcx8V1bNyXbFkkMU/dvwpRy3Fmj2/XdnnntUvc/vomFSvG2EAH+9k8HQMjRGyo
+      lo+YWrxMWPdQSBMLFED3wDDJbB7fL9M7eIFoqEShWOXya6+w9mCZjdV1RhZeJRbSSOQzGols
+      ToECONrbZvnRMtG2bg6fLFMJtTGe7OTrL2/QmzrP+dnLOPknFO0kHTGNRIJGIptVoAC6+pK8
+      //77hCNRRpPv4hEiErYYGnWIxaL4vo9FCt/SObY0t0ABhCNRwpFn70bhk1ul4/EYwMk7vYZo
+      pNnpLVqMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGiBboWQ5lC1XWzHDfz8tkS0
+      sRsJW4ACeIn9y6/u8ItfLwV+/j/93Z8z0G32X/3TIZAYrbEAfJ/9nQ02dvfxnArLyytUHYdi
+      sUKlcEzF0UikNLeGDoE8z2Zj54BwxKJyGCbR3cnyepqoG6Jsl1i8uPCitlPkVDQUgGVZ+HaR
+      XDVGoidOMpUi/2CFrfQGyelLhNBI5DOnMRLpNjhl5jg2tm32aWCD/3sP1/Xx8enqjPK7z79i
+      bHaOyfZ+/Ooh+apHV1wjkXA6I5HhUGNHsJFI1Pgxy8b2AKE4b129dvJ16vz0D/51uJEfLXIm
+      dBVIjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgNB2BX
+      SuSOC3ieSy6Xw322SqRdbXgIROS0NTQP4Hsud259TffQOLm9Y/ZzBdp6k0Qci2o5y9TiJbRI
+      pDSzxgLwK2QPC5S8Jwz2tHPxlStaJRKNRL5M/h+stqenOcjxiQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
