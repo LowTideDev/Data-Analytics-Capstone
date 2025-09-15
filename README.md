@@ -10,19 +10,24 @@ All gameplay and storefront metadata come from the Kaggle [**Steam Store Games**
 
 ```
 .
-├── docs/                       # Background notes, setup guides, and project documentation
-│   └── final_report.md         # Submitted Task 2 report summarizing the analysis
-├── notebooks/                  # Jupyter notebooks for exploration and modeling
-│   └── steam_analysis.ipynb    # Primary exploratory & modeling notebook
-├── visualizations/             # Tableau workbooks and packaged dashboards
-├── export_for_tableau.py       # Utility script for generating Tableau-ready extracts
-├── Task2 Report Template.docx  # Blank template provided by WGU
-├── games_part_*.csv            # Tabular data split into manageable chunks
-├── games_json_part_*.json      # Supplemental JSON attributes split by part
+├── docs/                        # Consolidated documentation moved out of the project root
+│   ├── README.md                # Index of supporting guides
+│   ├── analysis_guidelines.md   # Workflow reference for the capstone
+│   ├── data_overview.md         # Data dictionary for CSV and JSON sources
+│   ├── environment_setup.md     # Scripted environment bootstrap instructions
+│   ├── final_report.md          # Submitted Task 2 report summarizing the analysis
+│   └── setup_instructions.md    # Manual setup checklist
+├── notebooks/
+│   └── steam_analysis.ipynb     # Primary exploratory & modeling notebook
+├── visualizations/
+│   └── gamesbyprice.twb         # Tableau dashboard used in the submission
+├── export_for_tableau.py        # Utility script for generating Tableau-ready extracts
+├── games_part_*.csv             # Tabular data split into manageable chunks
+├── games_json_part_*.json       # Supplemental JSON attributes split by part
 ├── steam_cleaned_for_tableau.csv # Curated dataset exported for visualization tools
-└── requirements.txt            # Python dependencies for replicating the analysis
+└── requirements.txt             # Python dependencies for replicating the analysis
 ```
-Additional reference materials (feedback, rubrics, HTML exports) are stored at the repository root for completeness.
+Supporting artifacts such as faculty feedback, rubric exports, and the HTML rendering of the final report remain at the root alongside the raw dataset partitions for archival completeness.
 
 ## Environment Setup
 1. **Create and activate a virtual environment**
