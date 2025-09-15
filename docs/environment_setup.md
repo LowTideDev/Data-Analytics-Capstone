@@ -12,12 +12,12 @@ pip install pandas numpy matplotlib seaborn jupyterlab
 python - <<'PY'
 import pandas as pd, glob, json
 
-csv_files = sorted(glob.glob('games_part_*.csv'))
+csv_files = sorted(glob.glob('data/raw/games_part_*.csv'))
 if csv_files:
     df = pd.concat((pd.read_csv(f) for f in csv_files), ignore_index=True)
     # `df` now holds the combined records in memory
 
-json_files = sorted(glob.glob('games_json_part_*.json'))
+json_files = sorted(glob.glob('data/raw/games_json_part_*.json'))
 merged = {}
 for fp in json_files:
     with open(fp) as f:
