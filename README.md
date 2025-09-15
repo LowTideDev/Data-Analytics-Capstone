@@ -54,3 +54,7 @@ Additional reference materials (feedback, rubrics, HTML exports) are stored at t
 - 📊 **Visualizations:** Tableau workbook at [`visualizations/gamesbyprice.twb`](visualizations/gamesbyprice.twb) with packaged dashboards derived from the curated dataset. Additional Tableau artifacts reside alongside it for version history.
 
 For deeper background on project scope and environment recommendations, consult the documents in the [`docs/`](docs/README.md) directory.
+
+## Licensing
+- **Code:** Released under the [MIT License](LICENSE).
+- **Data:** The redistributed Steam dataset remains under the terms described in [DATA_LICENSE](DATA_LICENSE) (Creative Commons CC0 1.0).
