@@ -1,1 +1,15 @@
-The Steam data in this repository derives from the public Kaggle dataset "Steam Store Games" (https://www.kaggle.com/datasets/nikdavis/steam-store-games). The dataset is released under the Creative Commons CC0 1.0 Universal Public Domain Dedication. It is redistributed here for educational purposes without any warranty.
+# Data License
+
+This repository redistributes data from the Kaggle dataset **"Steam Store Games"** curated by Nik Davis.
+
+- **Source:** https://www.kaggle.com/datasets/nikdavis/steam-store-games
+- **Original License:** Creative Commons CC0 1.0 Universal (Public Domain Dedication)
+- **Attribution (recommended by Kaggle):** "Steam Store Games" dataset by Nik Davis, available under CC0 1.0 via Kaggle.
+
+The dataset is included here solely for educational and reproducibility purposes. No warranties are provided, and no
+additional restrictions are imposed beyond those of the original CC0 1.0 dedication. You are free to copy, modify,
+distribute, and use the data for any purpose, including commercial applications, subject to the terms of the Creative
+Commons CC0 1.0 Universal license.
+
+For the complete legal text of the CC0 1.0 Universal dedication, visit:
+https://creativecommons.org/publicdomain/zero/1.0/
