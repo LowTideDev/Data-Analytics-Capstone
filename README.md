@@ -6,9 +6,12 @@
 ├── export_for_tableau.py       # Utility script for generating Tableau-ready extracts
 ├── task_2_report.md            # Final written report (Task 2 submission)
 ├── Task2 Report Template.docx  # Blank template provided by WGU
-├── games_part_*.csv            # Tabular data split into manageable chunks
-├── games_json_part_*.json      # Supplemental JSON attributes split by part
-├── steam_cleaned_for_tableau.csv # Curated dataset exported for visualization tools
+├── data/
+│   ├── raw/
+│   │   ├── games_part_*.csv        # Tabular data split into manageable chunks
+│   │   └── games_json_part_*.json  # Supplemental JSON attributes split by part
+│   └── processed/
+│       └── steam_cleaned_for_tableau.csv # Curated dataset exported for visualization tools
 └── requirements.txt            # Python dependencies for replicating the analysis
 ```
 Additional reference materials (feedback, rubrics, HTML exports) are stored at the repository root for completeness.
@@ -31,10 +34,10 @@ Additional reference materials (feedback, rubrics, HTML exports) are stored at t
    ```python
    import pandas as pd, glob, json
 
-   csv_parts = sorted(glob.glob("games_part_*.csv"))
+   csv_parts = sorted(glob.glob("data/raw/games_part_*.csv"))
    df = pd.concat((pd.read_csv(path) for path in csv_parts), ignore_index=True)
 
-   json_parts = sorted(glob.glob("games_json_part_*.json"))
+   json_parts = sorted(glob.glob("data/raw/games_json_part_*.json"))
    json_records = {}
    for path in json_parts:
        with open(path) as f:
@@ -54,3 +57,7 @@ Additional reference materials (feedback, rubrics, HTML exports) are stored at t
 - 📊 **Visualizations:** Tableau workbook at [`visualizations/gamesbyprice.twb`](visualizations/gamesbyprice.twb) with packaged dashboards derived from the curated dataset. Additional Tableau artifacts reside alongside it for version history.
 
 For deeper background on project scope and environment recommendations, consult the documents in the [`docs/`](docs/README.md) directory.
+
+## Data Storage Considerations
+- The raw Steam datasets are sizable. If the repository size becomes a concern, consider hosting the files in an external object store (e.g., S3, Google Drive) and referencing them via download scripts.
+- Git Large File Storage (LFS) is another option for keeping the large CSV and JSON parts versioned without inflating the main Git history.
