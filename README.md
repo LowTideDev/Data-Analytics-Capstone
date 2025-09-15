@@ -2,7 +2,8 @@
 .
 ├── docs/                       # Background notes, setup guides, and project documentation
 ├── visualizations/             # Tableau workbooks and packaged dashboards
-├── steam_analysis_cleaned.ipynb# Primary exploratory & modeling notebook
+├── notebooks/                 # Jupyter notebooks for exploration
+│   └── steam_analysis.ipynb   # Primary exploratory & modeling notebook
 ├── export_for_tableau.py       # Utility script for generating Tableau-ready extracts
 ├── task_2_report.md            # Final written report (Task 2 submission)
 ├── Task2 Report Template.docx  # Blank template provided by WGU
@@ -50,7 +51,7 @@ Additional reference materials (feedback, rubrics, HTML exports) are stored at t
 
 ## Key Deliverables
 - 📄 **Final Report:** [`task_2_report.md`](task_2_report.md) (Markdown summary of methodology and findings). A formatted HTML export is also available at [`Task 2 — D195 Data Analytics Capstone.html`](Task%202%20%E2%80%94%20D195%20Data%20Analytics%20Capstone.html).
-- 📓 **Analysis Notebook:** [`steam_analysis_cleaned.ipynb`](steam_analysis_cleaned.ipynb) containing data preparation, exploratory analysis, and modeling steps.
+- 📓 **Analysis Notebook:** [`notebooks/steam_analysis.ipynb`](notebooks/steam_analysis.ipynb) containing data preparation, exploratory analysis, and modeling steps.
 - 📊 **Visualizations:** Tableau workbook at [`visualizations/gamesbyprice.twb`](visualizations/gamesbyprice.twb) with packaged dashboards derived from the curated dataset. Additional Tableau artifacts reside alongside it for version history.
 
 For deeper background on project scope and environment recommendations, consult the documents in the [`docs/`](docs/README.md) directory.
