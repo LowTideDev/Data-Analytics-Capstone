@@ -1,10 +1,21 @@
+## Project Summary
+
+Steam Marketplace Performance Analytics is a Western Governors University Data Analytics capstone that investigates how pricing, release timing, and product positioning influence player adoption on Valve's Steam platform. The project combines exploratory data analysis, feature engineering, and predictive modeling to surface actionable insights for product and marketing stakeholders.
+
+### Dataset Provenance
+
+All gameplay and storefront metadata come from the Kaggle [**Steam Store Games**](https://www.kaggle.com/datasets/nikdavis/steam-store-games) dataset (Creative Commons CC0 1.0). The CSV and JSON partitions included here mirror the original files so peers can fully reproduce the cleaning and modeling pipeline while respecting Kaggle's redistribution terms.
+
+## Repository Structure
+
 ```
 .
 ├── docs/                       # Background notes, setup guides, and project documentation
+│   └── final_report.md         # Submitted Task 2 report summarizing the analysis
+├── notebooks/                  # Jupyter notebooks for exploration and modeling
+│   └── steam_analysis.ipynb    # Primary exploratory & modeling notebook
 ├── visualizations/             # Tableau workbooks and packaged dashboards
-├── steam_analysis_cleaned.ipynb# Primary exploratory & modeling notebook
 ├── export_for_tableau.py       # Utility script for generating Tableau-ready extracts
-├── task_2_report.md            # Final written report (Task 2 submission)
 ├── Task2 Report Template.docx  # Blank template provided by WGU
 ├── games_part_*.csv            # Tabular data split into manageable chunks
 ├── games_json_part_*.json      # Supplemental JSON attributes split by part
@@ -49,8 +60,8 @@ Additional reference materials (feedback, rubrics, HTML exports) are stored at t
 5. **Insight packaging:** Export cleaned tables with `export_for_tableau.py`, refresh Tableau dashboards in `visualizations/`, and document takeaways in the final report.
 
 ## Key Deliverables
-- 📄 **Final Report:** [`task_2_report.md`](task_2_report.md) (Markdown summary of methodology and findings). A formatted HTML export is also available at [`Task 2 — D195 Data Analytics Capstone.html`](Task%202%20%E2%80%94%20D195%20Data%20Analytics%20Capstone.html).
-- 📓 **Analysis Notebook:** [`steam_analysis_cleaned.ipynb`](steam_analysis_cleaned.ipynb) containing data preparation, exploratory analysis, and modeling steps.
+- 📄 **Final Report:** [`docs/final_report.md`](docs/final_report.md) (Markdown summary of methodology and findings). A formatted HTML export is also available at [`Task 2 — D195 Data Analytics Capstone.html`](Task%202%20%E2%80%94%20D195%20Data%20Analytics%20Capstone.html).
+- 📓 **Analysis Notebook:** [`notebooks/steam_analysis.ipynb`](notebooks/steam_analysis.ipynb) containing data preparation, exploratory analysis, and modeling steps.
 - 📊 **Visualizations:** Tableau workbook at [`visualizations/gamesbyprice.twb`](visualizations/gamesbyprice.twb) with packaged dashboards derived from the curated dataset. Additional Tableau artifacts reside alongside it for version history.
 
 For deeper background on project scope and environment recommendations, consult the documents in the [`docs/`](docs/README.md) directory.
