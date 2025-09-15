@@ -2,7 +2,54 @@
 
 This repository stores a Steam games dataset split into multiple files along with reference documents from WGU.
 
-See `USAGE.md` for instructions on setting up a virtual environment, installing dependencies from `requirements.txt`, and launching the notebook.
+## Usage
+
+### 1. Create and activate a virtual environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 2. Install dependencies
+
+Install the required packages using the provided `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Launch Jupyter
+
+Once the dependencies are installed, start Jupyter to work with the notebooks:
+
+```bash
+jupyter lab  # or: jupyter notebook
+```
+
+### 4. Load the dataset chunks in memory
+
+Within your notebook or a Python shell, read the CSV and JSON files without writing a new combined file to disk:
+
+```python
+import glob
+import json
+import pandas as pd
+
+csv_parts = sorted(glob.glob('games_part_*.csv'))
+df = pd.concat((pd.read_csv(fp) for fp in csv_parts), ignore_index=True)
+
+json_parts = sorted(glob.glob('games_json_part_*.json'))
+all_json = {}
+for fp in json_parts:
+    with open(fp) as f:
+        all_json.update(json.load(f))
+```
+
+The variable `df` holds the merged CSV data and `all_json` contains the JSON records. Both structures stay in memory so the repository remains small.
+
+## Dataset Contents
+
 The data is provided in 5 CSV chunks (`games_part_*.csv`) and 23 JSON pieces (`games_json_part_*.json`). Merge these pieces only within your analysis environment (for example, using pandas) so that no large combined file needs to be committed to the repo.
 The raw data originates from the public Kaggle dataset "Steam Store Games" (https://www.kaggle.com/datasets/nikdavis/steam-store-games) released under the CC0 1.0 license. It is provided here solely for educational use.
 

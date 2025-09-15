@@ -1,21 +1,14 @@
-# DAC Dataset Repository
+# Documentation Index
 
-This repository contains chunked CSV and JSON files for a Steam games dataset as well as reference documents.
+This folder consolidates the key references that support the capstone project:
 
-The dataset is divided into multiple parts to keep file sizes manageable (approx. 1 GB total).
+- `final_report.md` – submitted Task 2 report covering the proposal, analysis design, and findings for the Steam dataset.
+- `analysis_guidelines.md` – high-level workflow for ingesting, cleaning, modeling, and reporting on the data.
+- `data_overview.md` – column-by-column description of the CSV files plus notes about the JSON records.
+- `environment_setup.md` – sample shell script that builds a virtual environment and loads the dataset pieces in memory.
+- `setup_instructions.md` – manual checklist for preparing your environment without running the script automatically.
 
-## Folder Structure
-- `games_part_*.csv` – five CSV chunks with detailed metadata about each game.
-- `games_json_part_*.json` – 23 JSON chunks containing similar information keyed by app ID.
-- `.docx` and `.html` files – capstone references and forms from WGU.
-
-1. **Load the dataset in memory** – read the CSV and JSON parts and combine them using pandas within your environment. Avoid persisting the merged result to the repository.
-2. **Clean the data** – parse numerical fields, convert dates, and normalize text.
-3. **Explore and analyze** – perform any statistical or machine‑learning tasks required by your project.
-
-See `docs/setup_instructions.md` for setup guidance.
-The repository's top-level `README.md` also outlines a quick plan and example
-script for getting started.
+Refer back to the root `README.md` for overall usage instructions and project planning guidance.
 
 
 
