@@ -17,6 +17,9 @@ All gameplay and storefront metadata come from the Kaggle [**Steam Store Games**
 │   ├── environment_setup.md     # Scripted environment bootstrap instructions
 │   ├── final_report.md          # Submitted Task 2 report summarizing the analysis
 │   └── setup_instructions.md    # Manual setup checklist
+├── data/
+│   ├── raw/                     # Source Kaggle exports preserved without modification
+│   └── processed/               # Cleaned tables and analysis-ready derivatives
 ├── notebooks/
 │   └── steam_analysis.ipynb     # Primary exploratory & modeling notebook
 ├── visualizations/
@@ -27,7 +30,7 @@ All gameplay and storefront metadata come from the Kaggle [**Steam Store Games**
 ├── steam_cleaned_for_tableau.csv # Curated dataset exported for visualization tools
 └── requirements.txt             # Python dependencies for replicating the analysis
 ```
-Supporting artifacts such as faculty feedback, rubric exports, and the HTML rendering of the final report remain at the root alongside the raw dataset partitions for archival completeness.
+Supporting artifacts such as faculty feedback and rubric exports remain at the root alongside the raw dataset partitions for archival completeness.
 
 ## Environment Setup
 1. **Create and activate a virtual environment**
@@ -65,7 +68,7 @@ Supporting artifacts such as faculty feedback, rubric exports, and the HTML rend
 5. **Insight packaging:** Export cleaned tables with `export_for_tableau.py`, refresh Tableau dashboards in `visualizations/`, and document takeaways in the final report.
 
 ## Key Deliverables
-- 📄 **Final Report:** [`docs/final_report.md`](docs/final_report.md) (Markdown summary of methodology and findings). A formatted HTML export is also available at [`Task 2 — D195 Data Analytics Capstone.html`](Task%202%20%E2%80%94%20D195%20Data%20Analytics%20Capstone.html).
+- 📄 **Final Report:** [`docs/final_report.md`](docs/final_report.md) (Markdown summary of methodology and findings).
 - 📓 **Analysis Notebook:** [`notebooks/steam_analysis.ipynb`](notebooks/steam_analysis.ipynb) containing data preparation, exploratory analysis, and modeling steps.
 - 📊 **Visualizations:** Tableau workbook at [`visualizations/gamesbyprice.twb`](visualizations/gamesbyprice.twb) with packaged dashboards derived from the curated dataset. Additional Tableau artifacts reside alongside it for version history.
 
