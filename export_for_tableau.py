@@ -1,8 +1,15 @@
 import pandas as pd
-import json, glob, re
+import json, re
+from pathlib import Path
+
+RAW_DIR = Path("data/raw")
+PROCESSED_DIR = Path("data/processed")
+
+csv_parts = sorted(RAW_DIR.glob("games_part_*.csv"), key=lambda f: int(re.search(r"\d+", f.name).group()))
+if not csv_parts:
+    raise FileNotFoundError(f"No CSV parts found in {RAW_DIR}.")
 
 # --- Load CSV Parts ---
-csv_parts = sorted(glob.glob('games_part_*.csv'), key=lambda f: int(re.search(r'\d+', f).group()))
 df = pd.concat((pd.read_csv(f) for f in csv_parts), ignore_index=True)
 
 # Normalize column names (lowercase, snake_case)
@@ -10,9 +17,9 @@ df.columns = [col.strip().lower().replace(' ', '_') for col in df.columns]
 
 # --- Load JSON Records (optional enrichment) ---
 records = {}
-json_parts = sorted(glob.glob('games_json_part_*.json'), key=lambda f: int(re.search(r'\d+', f).group()))
+json_parts = sorted(RAW_DIR.glob("games_json_part_*.json"), key=lambda f: int(re.search(r"\d+", f.name).group()))
 for fp in json_parts:
-    with open(fp) as f:
+    with fp.open() as f:
         records.update(json.load(f))
 
 def parse_owner_range(r):
@@ -63,5 +70,7 @@ columns_to_keep = [
 df_out = df[columns_to_keep]
 
 # --- Export ---
-df_out.to_csv("steam_cleaned_for_tableau.csv", index=False)
-print("Exported: steam_cleaned_for_tableau.csv")
+PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+output_path = PROCESSED_DIR / "steam_cleaned_for_tableau.csv"
+df_out.to_csv(output_path, index=False)
+print(f"Exported: {output_path}")
