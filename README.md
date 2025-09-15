@@ -1,14 +1,3 @@
-# Data Analytics Capstone – Steam Games Market Analysis
-
-## Project Summary
-This repository houses the deliverables for a Western Governors University (WGU) data analytics capstone that explores Steam store metadata. The project investigates how factors such as genre, price, release timing, and player sentiment relate to estimated owner counts. The workstream includes cleaning and merging fragmented exports, performing exploratory and predictive analysis, and packaging insights for independent game developers.
-
-## Dataset Source & License
-- **Origin:** [Steam Store Games](https://www.kaggle.com/datasets/nikdavis/steam-store-games) dataset curated by Nik Davis on Kaggle.
-- **License:** Creative Commons Zero v1.0 Universal (CC0 1.0). The dataset is redistributed here for educational purposes only.
-- **Included files:** Five CSV segments named `games_part_*.csv` and 23 JSON fragments named `games_json_part_*.json`. Keep these pieces split inside the repository; merge them only in-memory within your analysis environment.
-
-## Repository Structure
 ```
 .
 ├── docs/                       # Background notes, setup guides, and project documentation
