@@ -1,90 +1,56 @@
-# Data Analytics Capstone
-
-This repository stores a Steam games dataset split into multiple files along with reference documents from WGU.
-
-## Usage
-
-### 1. Create and activate a virtual environment
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
 ```
-
-### 2. Install dependencies
-
-Install the required packages using the provided `requirements.txt` file:
-
-```bash
-pip install -r requirements.txt
+.
+├── docs/                       # Background notes, setup guides, and project documentation
+├── visualizations/             # Tableau workbooks and packaged dashboards
+├── steam_analysis_cleaned.ipynb# Primary exploratory & modeling notebook
+├── export_for_tableau.py       # Utility script for generating Tableau-ready extracts
+├── task_2_report.md            # Final written report (Task 2 submission)
+├── Task2 Report Template.docx  # Blank template provided by WGU
+├── games_part_*.csv            # Tabular data split into manageable chunks
+├── games_json_part_*.json      # Supplemental JSON attributes split by part
+├── steam_cleaned_for_tableau.csv # Curated dataset exported for visualization tools
+└── requirements.txt            # Python dependencies for replicating the analysis
 ```
+Additional reference materials (feedback, rubrics, HTML exports) are stored at the repository root for completeness.
 
-### 3. Launch Jupyter
+## Environment Setup
+1. **Create and activate a virtual environment**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Launch Jupyter Lab or Notebook**
+   ```bash
+   jupyter lab   # or: jupyter notebook
+   ```
+4. **Load the dataset chunks in memory** (do not write merged files back to disk)
+   ```python
+   import pandas as pd, glob, json
 
-Once the dependencies are installed, start Jupyter to work with the notebooks:
+   csv_parts = sorted(glob.glob("games_part_*.csv"))
+   df = pd.concat((pd.read_csv(path) for path in csv_parts), ignore_index=True)
 
-```bash
-jupyter lab  # or: jupyter notebook
-```
+   json_parts = sorted(glob.glob("games_json_part_*.json"))
+   json_records = {}
+   for path in json_parts:
+       with open(path) as f:
+           json_records.update(json.load(f))
+   ```
 
-### 4. Load the dataset chunks in memory
+## Example Analysis Workflow
+1. **Profiling:** Inspect column data types, summarize missingness, and standardize date and price formats.
+2. **Feature engineering:** Derive indicators such as seasonal release windows, discounted price flags, and genre buckets.
+3. **Exploratory analysis:** Generate descriptive statistics and visualizations (e.g., price vs. ownership scatterplots, genre heat maps).
+4. **Modeling:** Train regression models to estimate owner counts and clustering algorithms to segment games by performance traits.
+5. **Insight packaging:** Export cleaned tables with `export_for_tableau.py`, refresh Tableau dashboards in `visualizations/`, and document takeaways in the final report.
 
-Within your notebook or a Python shell, read the CSV and JSON files without writing a new combined file to disk:
+## Key Deliverables
+- 📄 **Final Report:** [`task_2_report.md`](task_2_report.md) (Markdown summary of methodology and findings). A formatted HTML export is also available at [`Task 2 — D195 Data Analytics Capstone.html`](Task%202%20%E2%80%94%20D195%20Data%20Analytics%20Capstone.html).
+- 📓 **Analysis Notebook:** [`steam_analysis_cleaned.ipynb`](steam_analysis_cleaned.ipynb) containing data preparation, exploratory analysis, and modeling steps.
+- 📊 **Visualizations:** Tableau workbook at [`visualizations/gamesbyprice.twb`](visualizations/gamesbyprice.twb) with packaged dashboards derived from the curated dataset. Additional Tableau artifacts reside alongside it for version history.
 
-```python
-import glob
-import json
-import pandas as pd
-
-csv_parts = sorted(glob.glob('games_part_*.csv'))
-df = pd.concat((pd.read_csv(fp) for fp in csv_parts), ignore_index=True)
-
-json_parts = sorted(glob.glob('games_json_part_*.json'))
-all_json = {}
-for fp in json_parts:
-    with open(fp) as f:
-        all_json.update(json.load(f))
-```
-
-The variable `df` holds the merged CSV data and `all_json` contains the JSON records. Both structures stay in memory so the repository remains small.
-
-## Dataset Contents
-
-The data is provided in 5 CSV chunks (`games_part_*.csv`) and 23 JSON pieces (`games_json_part_*.json`). Merge these pieces only within your analysis environment (for example, using pandas) so that no large combined file needs to be committed to the repo.
-The raw data originates from the public Kaggle dataset "Steam Store Games" (https://www.kaggle.com/datasets/nikdavis/steam-store-games) released under the CC0 1.0 license. It is provided here solely for educational use.
-
-## Project Completion Plan
-
-1. **Load the datasets in memory** – use pandas to concatenate the CSV parts and combine the JSON pieces inside your analysis environment. Avoid writing a single large file back into the repository.
-2. **Clean and transform** – parse dates, convert numerical fields, and handle missing values.
-3. **Explore** – generate summary statistics and visualizations to understand distributions and correlations.
-4. **Model** – build predictive or clustering models depending on your goals.
-5. **Report results** – document your methodology and findings in a notebook or report.
-
-For additional background, see the documents in the `docs/` folder.
-
-## Example Starting Script
-
-```bash
-#!/bin/bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install pandas numpy matplotlib seaborn jupyterlab
-python - <<'PY'
-import pandas as pd, glob, json
-
-csv_files = sorted(glob.glob('games_part_*.csv'))
-df = pd.concat((pd.read_csv(f) for f in csv_files), ignore_index=True)
-# work with `df` directly; avoid writing a large combined CSV to disk
-
-json_files = sorted(glob.glob('games_json_part_*.json'))
-merged = {}
-for fp in json_files:
-    with open(fp) as f:
-        merged.update(json.load(f))
-# `merged` now holds all JSON records in memory
-PY
-jupyter lab
-```
-
-This script installs common data-analysis packages, loads the dataset chunks into memory, and launches Jupyter Lab for exploration. Adjust the steps as needed for your environment.
+For deeper background on project scope and environment recommendations, consult the documents in the [`docs/`](docs/README.md) directory.
