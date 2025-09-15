@@ -67,5 +67,5 @@ Additional reference materials (feedback, rubrics, HTML exports) are stored at t
 For deeper background on project scope and environment recommendations, consult the documents in the [`docs/`](docs/README.md) directory.
 
 ## Licensing
-- **Code:** Released under the [MIT License](LICENSE).
-- **Data:** The redistributed Steam dataset remains under the terms described in [DATA_LICENSE](DATA_LICENSE) (Creative Commons CC0 1.0).
+- **Code:** Released under the [MIT License](LICENSE). This applies to all scripts, notebooks, and other source code in the repository.
+- **Data:** The Steam dataset is redistributed exactly as provided in Kaggle's [**Steam Store Games**](https://www.kaggle.com/datasets/nikdavis/steam-store-games) release and remains covered by the Creative Commons CC0 1.0 Universal dedication documented in [DATA_LICENSE](DATA_LICENSE).
